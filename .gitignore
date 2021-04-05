@@ -1,2 +1,5 @@
 venv
 project
+
+*.sqlite3
+*.sqlite*

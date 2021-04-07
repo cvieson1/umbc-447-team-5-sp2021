@@ -1,40 +1,59 @@
 import papa from "papaparse";
+import legendItems from "../entities/LegendItems";
 import { features } from "../data/counties.json";
+//    this.setState(features);
 
-class LoadCountiesTask{
-    covid19DataUrl = "https://raw.githubusercontent.com/uclalawcovid19behindbars/historical-data/main/data/CA-historical-data.csv";
-    
-    setState = null;
-    mapCounties = features;
+class LoadcountyTask {
+  covidUrl =
+    "https://raw.githubusercontent.com/nytimes/covid-19-data/master/us-counties.csv";
 
-    load = (setState) => {
-        this.setState = setState;
+  setState = null;
 
-        papa.parse(this.covid19DataUrl, {
-            download:true,
-            header: true,
-            complete: (result) => this.#processCovidData(result.data)
-            ,
-        });
-    };
-    #processCovidData = (covidCounties)=>{
-        for(let i = 0; i < this.mapCounties.length; i++){
-            const mapCounty = this.mapCounties[i];
-            const covidCounty = covidCounties.find(
-                (covidCounty) => covidCounty.County === mapCounty.properties.name
-            );
+  load = (setState) => {
+    this.setState = setState;
 
-            mapCounty.properties.confirmed = 0;
-            mapCounty.ConfirmedText = "0";
+    papa.parse(this.covidUrl, {
+      download: true,
+      header: true,
+      complete: (result) => this.#processCovidData(result.data),
+    });
+  };
 
-            if (covidCounty != null) {
-                const confirmed = Number(covidCounty.Residents.Confirmed);
-                mapCounty.properties.confirmed = confirmed;
-                mapCounty.properties.ConfirmedText = confirmed;
-            }
-        }
-        this.setState(this.mapCounties);
-    };
+  #processCovidData = (covidcounties) => {
+    for (let i = 0; i < features.length; i++) {
+      const county = features[i];
+      //console.log(county);
+      const covidcounty = covidcounties.find(
+        (covidcounty) => county.properties.name === covidcounty.county
+      );
+
+      county.properties.confirmed = 0;
+      county.properties.confirmedText = 0;
+
+      if (covidcounty != null) {
+        let confirmed = Number(covidcounty.cases);
+        county.properties.confirmed = confirmed;
+        county.properties.confirmedText = this.#formatNumberWithCommas(
+          confirmed
+        );
+      }
+      this.#setcountyColor(county);
+    }
+
+    this.setState(features);
+  };
+
+  #setcountyColor = (county) => {
+    const legendItem = legendItems.find((item) =>
+      item.isFor(county.properties.confirmed)
+    );
+
+    if (legendItem != null) county.properties.color = legendItem.color;
+  };
+
+  #formatNumberWithCommas = (number) => {
+    return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+  };
 }
 
-export default LoadCountiesTask;
+export default LoadcountyTask;

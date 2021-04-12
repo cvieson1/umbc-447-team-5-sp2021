@@ -5,3 +5,5 @@ project
 *.sqlite*
 
 node_modules
+
+__pycache__

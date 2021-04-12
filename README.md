@@ -23,3 +23,24 @@ Do NOT push binary files to this repo. Please add folders or files containing bi
 to a new line in .gitignore (see how `venv` is already there?)
 
 If you find yourself needing a new python library please remember to add it to requirements.txt
+
+# To get started with this project:
+
+Clone the repository
+
+Create and enter a python virtual environment
+
+`pip install -r requirements.txt`
+
+Make sure nodejs and react are installed.
+
+Install the node module axios
+
+In 2 seprate terminal/console windows:
+`$ flask run` or `$ python3 app.py`
+
+and in the other window
+`$ npm start`
+
+The application will be available at http://127.0.0.1:3000/
+once both are running

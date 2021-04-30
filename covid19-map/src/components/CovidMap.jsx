@@ -10,7 +10,7 @@ const CovidMap = ({ counties }) => {
     fillOpacity: 1,
   };
 
-  const onEachcounty = (county, layer) => {
+  const onEachCounty = (county, layer) => {
     layer.options.fillColor = county.properties.color;
     const name = county.properties.name;
     const confirmedText = county.properties.confirmedText;
@@ -18,14 +18,15 @@ const CovidMap = ({ counties }) => {
   };
 
   return (
-    <Map style={{ height: "100vh" }} zoom={6} center={[38.1700, -119.7462]}>
+    <Map style={{ height: "90vh" }} zoom={6} center={[38.1700, -119.7462]}>
       <GeoJSON
         style={mapStyle}
         data={counties}
-        onEachFeature={onEachcounty}
+        onEachFeature={onEachCounty}
       />
     </Map>
   );
 };
+
 
 export default CovidMap;

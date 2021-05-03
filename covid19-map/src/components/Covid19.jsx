@@ -5,6 +5,8 @@ import CovidMap from "./CovidMap";
 import LoadcountiesTask from "../tasks/LoadCountiesTask";
 import Legend from "./Legend";
 import legendItems from "../entities/LegendItems";
+import DatePickerButton from "./Datepicker";
+import SearchBar from "./Search";
 
 
 const Covid19 = () => {
@@ -22,16 +24,27 @@ const Covid19 = () => {
 
   return (
     <div>
-      {counties.length === 0 ? (
-        <Loading />
-      ) : (
-        <div>
+      <nav class="navbar navbar-light bg-light">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="/"> California COVID Prisons</a>
+            <form class="d-flex">
+              <DatePickerButton />
+              <SearchBar />
+            </form>
+          </div>
+      </nav>
+      <div>
+        {counties.length === 0 ? (
+          <Loading />
+        ) : (
+          <div>
 
-          <CovidMap counties={counties} />
-          <Legend legendItems={legendItemsReverse} />
-          
-        </div>
-      )}
+            <CovidMap counties={counties} />
+            <Legend legendItems={legendItemsReverse} />
+            
+          </div>
+        )}
+      </div>
     </div>
   );
 };

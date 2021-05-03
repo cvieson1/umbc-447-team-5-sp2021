@@ -5,6 +5,7 @@ import CovidMap from "./CovidMap";
 import LoadcountiesTask from "../tasks/LoadCountiesTask";
 import Legend from "./Legend";
 import legendItems from "../entities/LegendItems";
+import DatePickerButton from "./Datepicker";
 
 const Covid19 = () => {
   const [counties, setcounties] = useState([]);
@@ -27,6 +28,7 @@ const Covid19 = () => {
         <div>
           <CovidMap counties={counties} />
           <Legend legendItems={legendItemsReverse} />
+          <DatePickerButton />
         </div>
       )}
     </div>

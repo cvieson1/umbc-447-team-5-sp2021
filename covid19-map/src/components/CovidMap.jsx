@@ -18,7 +18,7 @@ const CovidMap = ({ counties }) => {
   };
 
   return (
-    <Map style={{ height: "90vh" }} zoom={6} center={[38.1700, -119.7462]}>
+    <Map style={{ height: "85vh" }} zoom={6} center={[38.1700, -119.7462]}>
       <GeoJSON
         style={mapStyle}
         data={counties}

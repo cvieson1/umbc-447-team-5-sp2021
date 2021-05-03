@@ -12,7 +12,7 @@ const SearchBar = () => (
             placeholder="Search counties or prisons"
             name="s" 
         />
-        <button type="submit">Search</button>
+        <button type="button" class="btn btn-primary">Search</button>
     </form>
 );
 

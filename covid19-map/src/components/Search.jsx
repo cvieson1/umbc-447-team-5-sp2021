@@ -1,8 +1,6 @@
 import React from "react";
-import { useState } from "react";
 import "./visually-hidden.css";
-import { features } from "../data/counties.json";
-import * as JsSearch from 'js-search';
+import {counties} from "../data/countyNames.json"
 
 
 const filterCounties = (counties, query) => {
@@ -10,8 +8,8 @@ const filterCounties = (counties, query) => {
         return counties;
     }
     return counties.filter((county) => {
-        const countyName = county.properties.name.toLowerCase();
-        return countyName.includes(query);
+        const countyName = county.name.toLowerCase();
+        return countyName.includes(query.toLowerCase());
     });
 }
 
@@ -19,11 +17,9 @@ const filterCounties = (counties, query) => {
 const SearchBar = () => {
     const { search } = window.location;
     const query = new URLSearchParams(search).get('s');
-    const filteredCounties = filterCounties(features, query);
+    const filteredCounties = filterCounties(counties, query);
 
-    var searcher = new JsSearch.Search('properties.name');
-    searcher.addIndex('properties.name');
-    searcher.addDocuments(features);
+
 
     return (
         <div>
@@ -41,7 +37,7 @@ const SearchBar = () => {
             </form>
             <ul>
                 {filteredCounties.map(county => (
-                    <li key={county.properties.name}>{county.properties.name}</li>
+                    <li key={county.id}>{county.name}</li>
                 ))}
             </ul>
             

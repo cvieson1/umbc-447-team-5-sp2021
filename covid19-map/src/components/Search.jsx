@@ -33,7 +33,7 @@ const SearchBar = () => {
                     placeholder="Search counties or prisons"
                     name="s" 
                 />
-                <button type="button" class="btn btn-primary">Search</button>
+                <input class="btn btn-primary" type="submit" value="Search" />
             </form>
             <ul>
                 {filteredCounties.map(county => (

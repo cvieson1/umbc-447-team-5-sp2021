@@ -1,4 +1,5 @@
 import React from "react";
+import Select from 'react-select';
 import "./visually-hidden.css";
 import {counties} from "../data/countyNames.json"
 
@@ -27,19 +28,12 @@ const SearchBar = () => {
                 <label htmlFor="header-search">
                     <span className="visually-hidden">Search counties or prisons</span>
                 </label>
-                <input
-                    type="text"
-                    id="header-search"
-                    placeholder="Search counties or prisons"
-                    name="s" 
+                <Select
+                options={counties}
                 />
                 <input class="btn btn-primary" type="submit" value="Search" />
             </form>
-            <ul>
-                {filteredCounties.map(county => (
-                    <li key={county.id}>{county.name}</li>
-                ))}
-            </ul>
+            
             
         </div>
     );

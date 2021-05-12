@@ -17,14 +17,24 @@ const Covid19 = () => {
 
   const legendItemsReverse = [...legendItems].reverse();
 
-  const load = () => {
+  const load = (dateString) => {
     console.log("load");
     const loadcountiesTask = new LoadcountiesTask();
-    loadcountiesTask.load((counties) => setcounties(counties));
+    loadcountiesTask.load((counties) => setcounties(counties), dateString);
   };
 
-  const handleSubmit = () => {
+  const dateString = firstDate.getFullYear() 
+  + "--" + (firstDate.getUTCMonth()+1 < 10 ? ("0" + (firstDate.getUTCMonth()+1)) : firstDate.getUTCMonth()+1)
+  + "--" + (firstDate.getUTCDate() < 10 ? ("0" + firstDate.getUTCDate()) : firstDate.getUTCDate());
 
+  const handleSubmit = (e) => {
+    const dateString = firstDate.getFullYear() 
+  + "--" + (firstDate.getUTCMonth()+1 < 10 ? ("0" + (firstDate.getUTCMonth()+1)) : firstDate.getUTCMonth()+1)
+  + "--" + (firstDate.getUTCDate() < 10 ? ("0" + firstDate.getUTCDate()) : firstDate.getUTCDate());
+
+    load(dateString);
+    e.preventDefault();
+    
   };
 
   useEffect(load, []);
@@ -34,7 +44,7 @@ const Covid19 = () => {
       <nav class="navbar navbar-light bg-light">
           <div class="container-fluid">
             <a class="navbar-brand" href="/"> California COVID Prisons</a>
-            
+              <p>{dateString}</p>
               <form onSubmit={handleSubmit}>
                 <DatePicker 
                     todayButton="Click for Today"

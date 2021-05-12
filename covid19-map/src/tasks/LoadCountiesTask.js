@@ -9,23 +9,23 @@ class LoadcountyTask {
 
   setState = null;
 
-  load = (setState) => {
+  load = (setState, dateString) => {
     this.setState = setState;
 
     papa.parse(this.covidUrl, {
       download: true,
       header: true,
-      complete: (result) => this.#processCovidData(result.data),
+      complete: (result) => this.#processCovidData(result.data, dateString),
     });
   };
 
-  #processCovidData = (covidcounties) => {
+  #processCovidData = (covidcounties, dateString) => {
     for (let i = 0; i < features.length; i++) {
       const county = features[i];
       //console.log(county);
       const covidcounty = covidcounties.find(
         //yyyy-mm-dd
-        (covidcounty) => county.properties.name === covidcounty.county && covidcounty.date === "2020-09-24"
+        (covidcounty) => county.properties.name === covidcounty.county && covidcounty.date === this.dateString
       );
 
       county.properties.confirmed = 0;

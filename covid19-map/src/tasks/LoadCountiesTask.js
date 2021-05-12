@@ -25,7 +25,7 @@ class LoadcountyTask {
       //console.log(county);
       const covidcounty = covidcounties.find(
         //yyyy-mm-dd
-        (covidcounty) => county.properties.name === covidcounty.county && covidcounty.date === this.dateString
+        (covidcounty) => county.properties.name === covidcounty.county && covidcounty.date === dateString
       );
 
       county.properties.confirmed = 0;

@@ -24,13 +24,13 @@ const Covid19 = () => {
   };
 
   const dateString = firstDate.getFullYear() 
-  + "--" + (firstDate.getUTCMonth()+1 < 10 ? ("0" + (firstDate.getUTCMonth()+1)) : firstDate.getUTCMonth()+1)
-  + "--" + (firstDate.getUTCDate() < 10 ? ("0" + firstDate.getUTCDate()) : firstDate.getUTCDate());
+  + "-" + (firstDate.getUTCMonth()+1 < 10 ? ("0" + (firstDate.getUTCMonth()+1)) : firstDate.getUTCMonth()+1)
+  + "-" + (firstDate.getUTCDate() < 10 ? ("0" + firstDate.getUTCDate()) : firstDate.getUTCDate());
 
   const handleSubmit = (e) => {
     const dateString = firstDate.getFullYear() 
-  + "--" + (firstDate.getUTCMonth()+1 < 10 ? ("0" + (firstDate.getUTCMonth()+1)) : firstDate.getUTCMonth()+1)
-  + "--" + (firstDate.getUTCDate() < 10 ? ("0" + firstDate.getUTCDate()) : firstDate.getUTCDate());
+  + "-" + (firstDate.getUTCMonth()+1 < 10 ? ("0" + (firstDate.getUTCMonth()+1)) : firstDate.getUTCMonth()+1)
+  + "-" + (firstDate.getUTCDate() < 10 ? ("0" + firstDate.getUTCDate()) : firstDate.getUTCDate());
 
     load(dateString);
     e.preventDefault();

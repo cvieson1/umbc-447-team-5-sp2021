@@ -5,12 +5,15 @@ import CovidMap from "./CovidMap";
 import LoadcountiesTask from "../tasks/LoadCountiesTask";
 import Legend from "./Legend";
 import legendItems from "../entities/LegendItems";
-import DatePickerButton from "./Datepicker";
-import SearchBar from "./Search";
 
+import DatePicker from "react-datepicker";
+
+import "react-datepicker/dist/react-datepicker.css";
+import SearchBar from "./Searchbar";
 
 const Covid19 = () => {
   const [counties, setcounties] = useState([]);
+  const [firstDate, setFirstDate] = useState(new Date());
 
   const legendItemsReverse = [...legendItems].reverse();
 
@@ -20,6 +23,10 @@ const Covid19 = () => {
     loadcountiesTask.load((counties) => setcounties(counties));
   };
 
+  const handleSubmit = () => {
+
+  };
+
   useEffect(load, []);
 
   return (
@@ -27,10 +34,17 @@ const Covid19 = () => {
       <nav class="navbar navbar-light bg-light">
           <div class="container-fluid">
             <a class="navbar-brand" href="/"> California COVID Prisons</a>
-            <form class="d-flex">
-              <DatePickerButton />
-              <SearchBar />
+            
+              <form onSubmit={handleSubmit}>
+                <DatePicker 
+                    todayButton="Click for Today"
+                    selected={firstDate}
+                    onChange={date => setFirstDate(date)}
+                />
+                <SearchBar />
+                <input class="btn btn-primary" type="submit" value="Search" />
             </form>
+            
           </div>
       </nav>
       <div>

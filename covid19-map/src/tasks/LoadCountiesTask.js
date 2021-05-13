@@ -27,10 +27,10 @@ class LoadcountyTask {
     for (let i = 0; i < features.length; i++) {
       const county = features[i];
       //console.log(county);
-      console.log(dateString);
+      //console.log(dateString);
       const covidcounty = covidcounties.find(
         //yyyy-mm-dd
-        (covidcounty) => county.properties.name === covidcounty.county && covidcounty.date === "2021-05-12"
+        (covidcounty) => county.properties.name === covidcounty.county && covidcounty.date === dateString
       );
 
       county.properties.confirmed = 0;
@@ -42,6 +42,7 @@ class LoadcountyTask {
         county.properties.confirmedText = this.#formatNumberWithCommas(
           confirmed
         );
+        console.log("found: " + county.properties.name + ": " + county.properties.confirmed);
       }
       this.#setcountyColor(county);
     }

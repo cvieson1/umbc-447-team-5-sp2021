@@ -21,6 +21,7 @@ const Covid19 = () => {
     console.log("load");
     const loadcountiesTask = new LoadcountiesTask();
     loadcountiesTask.load((counties) => setcounties(counties), dateString);
+    console.log("load finished");
   };
 
   const dateString = firstDate.getFullYear() 
@@ -40,13 +41,14 @@ const Covid19 = () => {
 
   useEffect(load, []);
 
+
   return (
     <div>
       <nav class="navbar navbar-light bg-light">
           <div class="container-fluid">
             <a class="navbar-brand" href="/"> California COVID Prisons</a>
               <p>{dateString}</p>
-              <form onSubmit={handleSubmit}>
+              <form onSubmit={handleSubmit} method="get">
                 <DatePicker 
                     todayButton="Click for Today"
                     selected={firstDate}

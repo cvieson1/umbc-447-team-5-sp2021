@@ -19,13 +19,18 @@ class LoadcountyTask {
     });
   };
 
+  #getNextRecentDate = (dateString) =>{
+
+  };
+
   #processCovidData = (covidcounties, dateString) => {
     for (let i = 0; i < features.length; i++) {
       const county = features[i];
       //console.log(county);
+      console.log(dateString);
       const covidcounty = covidcounties.find(
         //yyyy-mm-dd
-        (covidcounty) => county.properties.name === covidcounty.county && covidcounty.date === dateString
+        (covidcounty) => county.properties.name === covidcounty.county && covidcounty.date === "2021-05-12"
       );
 
       county.properties.confirmed = 0;

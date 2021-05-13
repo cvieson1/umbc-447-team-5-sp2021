@@ -28,6 +28,7 @@ const Covid19 = () => {
   + "-" + (firstDate.getUTCDate() < 10 ? ("0" + firstDate.getUTCDate()) : firstDate.getUTCDate());
 
   const handleSubmit = (e) => {
+    setcounties([]);
     const dateString = firstDate.getFullYear() 
   + "-" + (firstDate.getUTCMonth()+1 < 10 ? ("0" + (firstDate.getUTCMonth()+1)) : firstDate.getUTCMonth()+1)
   + "-" + (firstDate.getUTCDate() < 10 ? ("0" + firstDate.getUTCDate()) : firstDate.getUTCDate());

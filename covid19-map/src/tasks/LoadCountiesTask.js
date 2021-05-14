@@ -20,25 +20,24 @@ class LoadcountyTask {
   };
 
    //yyyy-mm-dd
+   
    #getPreviousDay = (dateString) =>{
     if(dateString){
-      console.log("cur day: " + dateString);
-      const day = parseInt(dateString.substring(8,9));
-      const month = parseInt(dateString.substring(7,6));
-      const year = parseInt(dateString.substring(0,3));
+      const day = parseInt(dateString.substring(8,10));
+      const month = parseInt(dateString.substring(5,7));
+      const year = parseInt(dateString.substring(0,4));
 
-      const date1 = new Date(Date.UTC(year, month-1, day));
+      const date1 = new Date(year, month-1, day);
 
       //subtracts 1 day
       const prevDateMilli = date1.valueOf() - 86400000;
       const prevDate = new Date(prevDateMilli)
 
       const prevString = prevDate.getFullYear() 
-    + "-" + (prevDate.getUTCMonth()+1 < 10 ? ("0" + (prevDate.getUTCMonth()+1)) : prevDate.getUTCMonth()+1)
-    + "-" + (prevDate.getUTCDate() < 10 ? ("0" + prevDate.getUTCDate()) : prevDate.getUTCDate());
+    + "-" + (prevDate.getMonth()+1 < 10 ? ("0" + (prevDate.getMonth()+1)) : prevDate.getMonth()+1)
+    + "-" + (prevDate.getDate() < 10 ? ("0" + prevDate.getDate()) : prevDate.getDate());
 
-      console.log("yesterday: " + prevString);
-      return prevDate;
+      return prevString;
     }
     return dateString;
   };
@@ -48,24 +47,41 @@ class LoadcountyTask {
       const county = features[i];
       //console.log(county);
       //console.log(dateString);
-      const covidcounty = covidcounties.find(
-        //yyyy-mm-dd
-        (covidcounty) => county.properties.name === covidcounty.county && covidcounty.date === dateString
-      );
+      const countyExist = covidcounties.find((covidcounty) => county.properties.name === covidcounty.county);
+      if(countyExist != null){
 
-      county.properties.confirmed = 0;
-      county.properties.confirmedText = 0;
-
-      if (covidcounty != null) {
-        let confirmed = Number(covidcounty.cases);
-        county.properties.confirmed = confirmed;
-        county.properties.confirmedText = this.#formatNumberWithCommas(
-          confirmed
+        let covidcounty = covidcounties.find(
+          //yyyy-mm-dd
+          (covidcounty) => county.properties.name === covidcounty.county && covidcounty.date === dateString
         );
-        console.log("found: " + county.properties.name + ": " + county.properties.confirmed);
+        console.log(covidcounty);
+        let newDateString = this.#getPreviousDay(dateString);
+        while(!covidcounty){
+          newDateString = this.#getPreviousDay(newDateString);
+          const newNewDateString = newDateString;
+          covidcounty = covidcounties.find(
+            //yyyy-mm-dd
+            (covidcounty) => county.properties.name === covidcounty.county && covidcounty.date === newNewDateString
+          );
+
+        }
+        
+        county.properties.confirmed = 0;
+        county.properties.confirmedText = 0;
+  
+        if (covidcounty != null) {
+          let confirmed = Number(covidcounty.cases);
+          county.properties.confirmed = confirmed;
+          county.properties.confirmedText = this.#formatNumberWithCommas(
+            confirmed
+          );
+          console.log("found: " + county.properties.name + ": " + county.properties.confirmed);
+        }
+        this.#setcountyColor(county);
       }
-      this.#setcountyColor(county);
+     
     }
+    console.log("today: " + dateString + " prev: " + this.#getPreviousDay(dateString));
 
     this.setState(features);
   };

@@ -21,25 +21,27 @@ const Covid19 = () => {
     console.log("load");
     const loadcountiesTask = new LoadcountiesTask();
     loadcountiesTask.load((counties) => setcounties(counties), dateString);
-    console.log("load finished");
   };
 
   const dateString = firstDate.getFullYear() 
-  + "-" + (firstDate.getUTCMonth()+1 < 10 ? ("0" + (firstDate.getUTCMonth()+1)) : firstDate.getUTCMonth()+1)
-  + "-" + (firstDate.getUTCDate() < 10 ? ("0" + firstDate.getUTCDate()) : firstDate.getUTCDate());
+  + "-" + (firstDate.getMonth()+1 < 10 ? ("0" + (firstDate.getMonth()+1)) : firstDate.getMonth()+1)
+  + "-" + (firstDate.getDate() < 10 ? ("0" + firstDate.getDate()) : firstDate.getDate());
 
   const handleSubmit = (e) => {
     setcounties([]);
     const dateString = firstDate.getFullYear() 
-  + "-" + (firstDate.getUTCMonth()+1 < 10 ? ("0" + (firstDate.getUTCMonth()+1)) : firstDate.getUTCMonth()+1)
-  + "-" + (firstDate.getUTCDate() < 10 ? ("0" + firstDate.getUTCDate()) : firstDate.getUTCDate());
+  + "-" + (firstDate.getMonth()+1 < 10 ? ("0" + (firstDate.getMonth()+1)) : firstDate.getMonth()+1)
+  + "-" + (firstDate.getDate() < 10 ? ("0" + firstDate.getDate()) : firstDate.getDate());
 
     load(dateString);
     e.preventDefault();
     
   };
 
-  useEffect(load, []);
+  //load the page if the dateString changes
+  useEffect(() => {
+    load(dateString);
+  }, [dateString]);
 
 
   return (

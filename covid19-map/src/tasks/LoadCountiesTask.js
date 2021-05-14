@@ -68,14 +68,23 @@ class LoadcountyTask {
         
         county.properties.confirmed = 0;
         county.properties.confirmedText = 0;
+
+        county.properties.deaths = 0;  //added
+        county.properties.deathText = 0; //added
   
         if (covidcounty != null) {
           let confirmed = Number(covidcounty.cases);
+          let deaths = Number(covidcounty.deaths);    //added
           county.properties.confirmed = confirmed;
+          county.properties.deaths = deaths;  //added
           county.properties.confirmedText = this.#formatNumberWithCommas(
             confirmed
           );
+          county.properties.deathsText = this.#formatNumberWithCommas(    //added
+            deaths
+          );
           console.log("found: " + county.properties.name + ": " + county.properties.confirmed);
+          console.log("found:" + county.properties.name + ": " + county.properties.deaths);
         }
         this.#setcountyColor(county);
       }

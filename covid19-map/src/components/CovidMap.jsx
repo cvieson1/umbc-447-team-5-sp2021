@@ -14,7 +14,10 @@ const CovidMap = ({ counties }) => {
     layer.options.fillColor = county.properties.color;
     const name = county.properties.name;
     const confirmedText = county.properties.confirmedText;
-    layer.bindPopup(`${name} ${confirmedText}`);
+    const confirmedTitle = "<br>Confirmed Cases: ";
+    const deathsTitle = "<br> Total Deaths: ";  //added
+    const deathsText = county.properties.deathsText;
+    layer.bindPopup(`${name} ${confirmedTitle} ${confirmedText} ${deathsTitle} ${deathsText}`);  //added
   };
 
   return (

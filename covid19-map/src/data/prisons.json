@@ -1,0 +1,1845 @@
+{
+   "type": "FeatureCollection",
+   "prisonFeatures": [
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -120.1231018,35.97394934 ]
+    },
+    "properties": {
+    "Facility.ID":83,
+    "Jurisdiction":"state",
+    "State":"California",
+    "Name":"AVENAL STATE PRISON",
+    "County":"KINGS",
+    "jurisdiction_scraper":"state",
+    "Description":"Prison",
+    "Age":"Adult",
+    "Gender":"Male",
+    "Capacity":"2920",
+    "BJS.ID":"5E+19"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -117.8588801,35.1532512 ]
+    },
+    "properties": {
+    "Facility.ID":88,
+    "Jurisdiction":"state",
+    "State":"California",
+    "Name":"CALIFORNIA CITY CORRECTIONAL FACILITY",
+    "County":"KERN",
+    "jurisdiction_scraper":"state",
+    "Description":"Prison",
+    "Age":"Adult",
+    "Gender":"Male",
+    "Capacity":"2304",
+    "BJS.ID":"NA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -120.5167302,40.40195801 ]
+    },
+    "properties": {
+    "Facility.ID":89,
+    "Jurisdiction":"state",
+    "State":"California",
+    "Name":"CALIFORNIA CORRECTIONAL CENTER",
+    "County":"LASSEN",
+    "jurisdiction_scraper":"state",
+    "Description":"Prison",
+    "Age":"Adult",
+    "Gender":"Male",
+    "Capacity":"3883",
+    "BJS.ID":"5E+19"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -118.5703307,35.10991489 ]
+    },
+    "properties": {
+    "Facility.ID":90,
+    "Jurisdiction":"state",
+    "State":"California",
+    "Name":"CALIFORNIA CORRECTIONAL INSTITUTION",
+    "County":"KERN",
+    "jurisdiction_scraper":"state",
+    "Description":"Prison",
+    "Age":"Adult",
+    "Gender":"Male",
+    "Capacity":"2783",
+    "BJS.ID":"5E+19"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -121.1848441,37.8947278 ]
+    },
+    "properties": {
+    "Facility.ID":91,
+    "Jurisdiction":"state",
+    "State":"California",
+    "Name":"CALIFORNIA HEALTH CARE FACILITY",
+    "County":"SAN JOAQUIN",
+    "jurisdiction_scraper":"state",
+    "Description":"Prison",
+    "Age":"Adult",
+    "Gender":"Male",
+    "Capacity":"2951",
+    "BJS.ID":"NA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -117.6823919,33.98471223 ]
+    },
+    "properties": {
+    "Facility.ID":92,
+    "Jurisdiction":"state",
+    "State":"California",
+    "Name":"CALIFORNIA INSTITUTION FOR MEN",
+    "County":"SAN BERNARDINO",
+    "jurisdiction_scraper":"state",
+    "Description":"Prison",
+    "Age":"Adult",
+    "Gender":"Male",
+    "Capacity":"2973",
+    "BJS.ID":"5E+19"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -117.636365,33.94974531 ]
+    },
+    "properties": {
+    "Facility.ID":93,
+    "Jurisdiction":"state",
+    "State":"California",
+    "Name":"CALIFORNIA INSTITUTION FOR WOMEN",
+    "County":"SAN BERNARDINO",
+    "jurisdiction_scraper":"state",
+    "Description":"Prison",
+    "Age":"Adult",
+    "Gender":"Female",
+    "Capacity":"1398",
+    "BJS.ID":"5E+19"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -121.9791645,38.32851019 ]
+    },
+    "properties": {
+    "Facility.ID":94,
+    "Jurisdiction":"state",
+    "State":"California",
+    "Name":"CALIFORNIA MEDICAL FACILITY",
+    "County":"SOLANO",
+    "jurisdiction_scraper":"state",
+    "Description":"Medical Facility",
+    "Age":"Adult",
+    "Gender":"Mixed",
+    "Capacity":"2361",
+    "BJS.ID":"5E+19"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -120.6989005,35.32457413 ]
+    },
+    "properties": {
+    "Facility.ID":95,
+    "Jurisdiction":"state",
+    "State":"California",
+    "Name":"CALIFORNIA MENS COLONY",
+    "County":"SAN LUIS OBISPO",
+    "jurisdiction_scraper":"state",
+    "Description":"Prison",
+    "Age":"Adult",
+    "Gender":"Male",
+    "Capacity":"3838",
+    "BJS.ID":"5E+19"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -117.5759442,33.92691794 ]
+    },
+    "properties": {
+    "Facility.ID":96,
+    "Jurisdiction":"state",
+    "State":"California",
+    "Name":"CALIFORNIA REHABILITATION CENTER",
+    "County":"RIVERSIDE",
+    "jurisdiction_scraper":"state",
+    "Description":"Prison",
+    "Age":"Adult",
+    "Gender":"Male",
+    "Capacity":"1962",
+    "BJS.ID":"5E+19"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -119.549121,36.06081823 ]
+    },
+    "properties": {
+    "Facility.ID":97,
+    "Jurisdiction":"state",
+    "State":"California",
+    "Name":"CALIFORNIA STATE PRISON CORCORAN",
+    "County":"KINGS",
+    "jurisdiction_scraper":"state",
+    "Description":"Prison",
+    "Age":"Adult",
+    "Gender":"Male",
+    "Capacity":"3116",
+    "BJS.ID":"5E+19"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -118.2276136,34.69359649 ]
+    },
+    "properties": {
+    "Facility.ID":98,
+    "Jurisdiction":"state",
+    "State":"California",
+    "Name":"CALIFORNIA STATE PRISON LOS ANGELES",
+    "County":"LOS ANGELES",
+    "jurisdiction_scraper":"state",
+    "Description":"Prison",
+    "Age":"Adult",
+    "Gender":"Male",
+    "Capacity":"2300",
+    "BJS.ID":"5E+19"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -121.1539037,38.69444411 ]
+    },
+    "properties": {
+    "Facility.ID":99,
+    "Jurisdiction":"state",
+    "State":"California",
+    "Name":"CALIFORNIA STATE PRISON SACRAMENTO",
+    "County":"SACRAMENTO",
+    "jurisdiction_scraper":"state",
+    "Description":"Prison",
+    "Age":"Adult",
+    "Gender":"Male",
+    "Capacity":"1828",
+    "BJS.ID":"5E+19"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.4903665,37.94003982 ]
+    },
+    "properties": {
+    "Facility.ID":100,
+    "Jurisdiction":"state",
+    "State":"California",
+    "Name":"CALIFORNIA STATE PRISON SAN QUENTIN",
+    "County":"MARIN",
+    "jurisdiction_scraper":"state",
+    "Description":"Prison",
+    "Age":"Adult",
+    "Gender":"Male",
+    "Capacity":"3082",
+    "BJS.ID":"5E+19"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -121.9752369,38.32077652 ]
+    },
+    "properties": {
+    "Facility.ID":101,
+    "Jurisdiction":"state",
+    "State":"California",
+    "Name":"CALIFORNIA STATE PRISON SOLANO",
+    "County":"SOLANO",
+    "jurisdiction_scraper":"state",
+    "Description":"Prison",
+    "Age":"Adult",
+    "Gender":"Male",
+    "Capacity":"2610",
+    "BJS.ID":"5E+19"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -115.484344,33.16569337 ]
+    },
+    "properties": {
+    "Facility.ID":102,
+    "Jurisdiction":"state",
+    "State":"California",
+    "Name":"CALIPATRIA STATE PRISON",
+    "County":"IMPERIAL",
+    "jurisdiction_scraper":"state",
+    "Description":"Prison",
+    "Age":"Adult",
+    "Gender":"Male",
+    "Capacity":"2308",
+    "BJS.ID":"5E+19"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -115.7890555,32.82339731 ]
+    },
+    "properties": {
+    "Facility.ID":111,
+    "Jurisdiction":"state",
+    "State":"California",
+    "Name":"CENTINELA STATE PRISON",
+    "County":"IMPERIAL",
+    "jurisdiction_scraper":"state",
+    "Description":"Prison",
+    "Age":"Adult",
+    "Gender":"Male",
+    "Capacity":"2308",
+    "BJS.ID":"5E+19"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -120.1527098,37.09368073 ]
+    },
+    "properties": {
+    "Facility.ID":112,
+    "Jurisdiction":"state",
+    "State":"California",
+    "Name":"CENTRAL CALIFORNIA WOMENS FACILITY",
+    "County":"MADERA",
+    "jurisdiction_scraper":"state",
+    "Description":"Prison",
+    "Age":"Adult",
+    "Gender":"Female",
+    "Capacity":"2004",
+    "BJS.ID":"5E+19"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -114.9095058,33.56257951 ]
+    },
+    "properties": {
+    "Facility.ID":113,
+    "Jurisdiction":"state",
+    "State":"California",
+    "Name":"CHUCKAWALLA VALLEY STATE PRISON",
+    "County":"RIVERSIDE",
+    "jurisdiction_scraper":"state",
+    "Description":"Prison",
+    "Age":"Adult",
+    "Gender":"Male",
+    "Capacity":"1738",
+    "BJS.ID":"5E+19"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -121.3822324,36.46964789 ]
+    },
+    "properties": {
+    "Facility.ID":115,
+    "Jurisdiction":"state",
+    "State":"California",
+    "Name":"CORRECTIONAL TRAINING FACILITY",
+    "County":"MONTEREY",
+    "jurisdiction_scraper":"state",
+    "Description":"Administrative",
+    "Age":"NA",
+    "Gender":"Male",
+    "Capacity":"3312",
+    "BJS.ID":"5E+19"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -121.3306264,37.74805759 ]
+    },
+    "properties": {
+    "Facility.ID":116,
+    "Jurisdiction":"state",
+    "State":"California",
+    "Name":"DEUEL VOCATIONAL INSTITUTION",
+    "County":"SAN JOAQUIN",
+    "jurisdiction_scraper":"state",
+    "Description":"Prison",
+    "Age":"Adult",
+    "Gender":"Male",
+    "Capacity":"1681",
+    "BJS.ID":"5E+19"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -121.1630324,38.69538339 ]
+    },
+    "properties": {
+    "Facility.ID":120,
+    "Jurisdiction":"state",
+    "State":"California",
+    "Name":"FOLSOM STATE PRISON",
+    "County":"SACRAMENTO",
+    "jurisdiction_scraper":"state",
+    "Description":"Prison",
+    "Age":"Adult",
+    "Gender":"Mixed",
+    "Capacity":"2066",
+    "BJS.ID":"5E+19"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -120.5258579,40.4034569 ]
+    },
+    "properties": {
+    "Facility.ID":128,
+    "Jurisdiction":"state",
+    "State":"California",
+    "Name":"HIGH DESERT STATE PRISON",
+    "County":"LASSEN",
+    "jurisdiction_scraper":"state",
+    "Description":"Prison",
+    "Age":"Adult",
+    "Gender":"Male",
+    "Capacity":"2324",
+    "BJS.ID":"5E+19"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -114.9260354,33.56098104 ]
+    },
+    "properties": {
+    "Facility.ID":129,
+    "Jurisdiction":"state",
+    "State":"California",
+    "Name":"IRONWOOD STATE PRISON",
+    "County":"RIVERSIDE",
+    "jurisdiction_scraper":"state",
+    "Description":"Prison",
+    "Age":"Adult",
+    "Gender":"Male",
+    "Capacity":"2200",
+    "BJS.ID":"5E+19"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -119.3253627,35.76647437 ]
+    },
+    "properties": {
+    "Facility.ID":131,
+    "Jurisdiction":"state",
+    "State":"California",
+    "Name":"KERN VALLEY STATE PRISON",
+    "County":"KERN",
+    "jurisdiction_scraper":"state",
+    "Description":"Prison",
+    "Age":"Adult",
+    "Gender":"Male",
+    "Capacity":"2448",
+    "BJS.ID":"5E+19"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -118.2321,34.0591 ]
+    },
+    "properties": {
+    "Facility.ID":135,
+    "Jurisdiction":"county",
+    "State":"California",
+    "Name":"LOS ANGELES JAILS",
+    "County":"NA",
+    "jurisdiction_scraper":"county",
+    "Description":"Jail",
+    "Age":"Mixed",
+    "Gender":"Mixed",
+    "Capacity":"NA",
+    "BJS.ID":"NA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -120.9534458,38.37074335 ]
+    },
+    "properties": {
+    "Facility.ID":139,
+    "Jurisdiction":"state",
+    "State":"California",
+    "Name":"MULE CREEK STATE PRISON",
+    "County":"AMADOR",
+    "jurisdiction_scraper":"state",
+    "Description":"Prison",
+    "Age":"Adult",
+    "Gender":"Male",
+    "Capacity":"3284",
+    "BJS.ID":"5E+19"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -121.1978212,37.8911829 ]
+    },
+    "properties": {
+    "Facility.ID":140,
+    "Jurisdiction":"state",
+    "State":"California",
+    "Name":"NA CHADERJIAN YOUTH CORRECTIONAL FACILITY",
+    "County":"SAN JOAQUIN",
+    "jurisdiction_scraper":"state",
+    "Description":"Prison",
+    "Age":"Juvenile",
+    "Gender":"Male",
+    "Capacity":"210",
+    "BJS.ID":"NA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -119.3098757,35.78188512 ]
+    },
+    "properties": {
+    "Facility.ID":141,
+    "Jurisdiction":"state",
+    "State":"California",
+    "Name":"NORTH KERN STATE PRISON",
+    "County":"KERN",
+    "jurisdiction_scraper":"state",
+    "Description":"Reception Center",
+    "Age":"Adult",
+    "Gender":"Male",
+    "Capacity":"2694",
+    "BJS.ID":"5E+19"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -121.1978213,37.8911829 ]
+    },
+    "properties": {
+    "Facility.ID":142,
+    "Jurisdiction":"state",
+    "State":"California",
+    "Name":"NORTHERN CALIFORNIA YOUTH CORRECTIONAL CENTER",
+    "County":"SAN JOAQUIN",
+    "jurisdiction_scraper":"state",
+    "Description":"Prison",
+    "Age":"Juvenile",
+    "Gender":"Male",
+    "Capacity":"210",
+    "BJS.ID":"NA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -121.1976947,37.89852126 ]
+    },
+    "properties": {
+    "Facility.ID":143,
+    "Jurisdiction":"state",
+    "State":"California",
+    "Name":"OH CLOSE YOUTH CORRECTIONAL FACILITY",
+    "County":"SAN JOAQUIN",
+    "jurisdiction_scraper":"state",
+    "Description":"Prison",
+    "Age":"Juvenile",
+    "Gender":"Male",
+    "Capacity":"192",
+    "BJS.ID":"NA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -117.8774523,33.7489556 ]
+    },
+    "properties": {
+    "Facility.ID":144,
+    "Jurisdiction":"county",
+    "State":"California",
+    "Name":"ORANGE COUNTY JAILS",
+    "County":"ORANGE",
+    "jurisdiction_scraper":"county",
+    "Description":"Jail",
+    "Age":"NA",
+    "Gender":"NA",
+    "Capacity":"NA",
+    "BJS.ID":"NA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -124.1490751,41.85480851 ]
+    },
+    "properties": {
+    "Facility.ID":145,
+    "Jurisdiction":"state",
+    "State":"California",
+    "Name":"PELICAN BAY STATE PRISON",
+    "County":"DEL NORTE",
+    "jurisdiction_scraper":"state",
+    "Description":"Prison",
+    "Age":"Adult",
+    "Gender":"Male",
+    "Capacity":"2380",
+    "BJS.ID":"5E+19"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -120.2488996,36.13147309 ]
+    },
+    "properties": {
+    "Facility.ID":147,
+    "Jurisdiction":"state",
+    "State":"California",
+    "Name":"PLEASANT VALLEY STATE PRISON",
+    "County":"FRESNO",
+    "jurisdiction_scraper":"state",
+    "Description":"Prison",
+    "Age":"Adult",
+    "Gender":"Male",
+    "Capacity":"2308",
+    "BJS.ID":"5E+19"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -121.3279067,38.2890255 ]
+    },
+    "properties": {
+    "Facility.ID":148,
+    "Jurisdiction":"state",
+    "State":"California",
+    "Name":"RICHARD A MCGEE CORRECTIONAL TRAINING CENTER",
+    "County":"NA",
+    "jurisdiction_scraper":"state",
+    "Description":"Administrative",
+    "Age":"NA",
+    "Gender":"NA",
+    "Capacity":"NA",
+    "BJS.ID":"NA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -116.9335763,32.58456487 ]
+    },
+    "properties": {
+    "Facility.ID":150,
+    "Jurisdiction":"state",
+    "State":"California",
+    "Name":"RJ DONOVAN CORRECTIONAL FACILITY",
+    "County":"SAN DIEGO",
+    "jurisdiction_scraper":"state",
+    "Description":"Prison",
+    "Age":"Adult",
+    "Gender":"Male",
+    "Capacity":"2992",
+    "BJS.ID":"NA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -121.3743944,36.47885699 ]
+    },
+    "properties": {
+    "Facility.ID":152,
+    "Jurisdiction":"state",
+    "State":"California",
+    "Name":"SALINAS VALLEY STATE PRISON",
+    "County":"MONTEREY",
+    "jurisdiction_scraper":"state",
+    "Description":"Prison",
+    "Age":"Adult",
+    "Gender":"Male",
+    "Capacity":"2452",
+    "BJS.ID":"5E+19"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -120.5365401,37.89168856 ]
+    },
+    "properties": {
+    "Facility.ID":158,
+    "Jurisdiction":"state",
+    "State":"California",
+    "Name":"SIERRA CONSERVATION CENTER",
+    "County":"TUOLUMNE",
+    "jurisdiction_scraper":"state",
+    "Description":"Prison",
+    "Age":"Adult",
+    "Gender":"Male",
+    "Capacity":"3836",
+    "BJS.ID":"5E+19"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -119.5478,36.05396 ]
+    },
+    "properties": {
+    "Facility.ID":161,
+    "Jurisdiction":"state",
+    "State":"California",
+    "Name":"SUBSTANCE ABUSE TREATMENT FACILITY",
+    "County":"KINGS",
+    "jurisdiction_scraper":"state",
+    "Description":"Prison",
+    "Age":"Adult",
+    "Gender":"Male",
+    "Capacity":"3424",
+    "BJS.ID":"NA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -120.1554719,37.10547736 ]
+    },
+    "properties": {
+    "Facility.ID":164,
+    "Jurisdiction":"state",
+    "State":"California",
+    "Name":"VALLEY STATE PRISON",
+    "County":"MADERA",
+    "jurisdiction_scraper":"state",
+    "Description":"Prison",
+    "Age":"Adult",
+    "Gender":"Male",
+    "Capacity":"1980",
+    "BJS.ID":"5E+19"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -119.4083319,35.59431189 ]
+    },
+    "properties": {
+    "Facility.ID":171,
+    "Jurisdiction":"state",
+    "State":"California",
+    "Name":"WASCO STATE PRISON",
+    "County":"KERN",
+    "jurisdiction_scraper":"state",
+    "Description":"Prison",
+    "Age":"Adult",
+    "Gender":"Male",
+    "Capacity":"2984",
+    "BJS.ID":"5E+19"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -119.543418,37.155177 ]
+    },
+    "properties": {
+    "Facility.ID":1719,
+    "Jurisdiction":"state",
+    "State":"California",
+    "Name":"CDCR CCHCS WORKSITE LOCATION HUMBOLDT COUNTY",
+    "County":"NA",
+    "jurisdiction_scraper":"state",
+    "Description":"Work Camp",
+    "Age":"NA",
+    "Gender":"NA",
+    "Capacity":"NA",
+    "BJS.ID":"NA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -119.543418,37.155177 ]
+    },
+    "properties": {
+    "Facility.ID":1720,
+    "Jurisdiction":"state",
+    "State":"California",
+    "Name":"CDCR CCHCS WORKSITE LOCATION SAN FRANCISCO COUNTY",
+    "County":"NA",
+    "jurisdiction_scraper":"state",
+    "Description":"Work Camp",
+    "Age":"NA",
+    "Gender":"NA",
+    "Capacity":"NA",
+    "BJS.ID":"NA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -119.543418,37.155177 ]
+    },
+    "properties": {
+    "Facility.ID":1721,
+    "Jurisdiction":"state",
+    "State":"California",
+    "Name":"CDCR CCHCS WORKSITE LOCATION YOLO COUNTY",
+    "County":"NA",
+    "jurisdiction_scraper":"state",
+    "Description":"Work Camp",
+    "Age":"NA",
+    "Gender":"NA",
+    "Capacity":"NA",
+    "BJS.ID":"NA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -119.543418,37.155177 ]
+    },
+    "properties": {
+    "Facility.ID":1722,
+    "Jurisdiction":"state",
+    "State":"California",
+    "Name":"CDCR CCHCS WORKSITE LOCATION ALAMEDA COUNTY",
+    "County":"NA",
+    "jurisdiction_scraper":"state",
+    "Description":"Work Camp",
+    "Age":"NA",
+    "Gender":"NA",
+    "Capacity":"NA",
+    "BJS.ID":"NA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -119.543418,37.155177 ]
+    },
+    "properties": {
+    "Facility.ID":1723,
+    "Jurisdiction":"state",
+    "State":"California",
+    "Name":"CDCR CCHCS WORKSITE LOCATION MERCED COUNTY",
+    "County":"NA",
+    "jurisdiction_scraper":"state",
+    "Description":"Work Camp",
+    "Age":"NA",
+    "Gender":"NA",
+    "Capacity":"NA",
+    "BJS.ID":"NA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -121.4974903,38.58298737 ]
+    },
+    "properties": {
+    "Facility.ID":1724,
+    "Jurisdiction":"county",
+    "State":"California",
+    "Name":"SACRAMENTO COUNTY JAIL",
+    "County":"SACRAMENTO",
+    "jurisdiction_scraper":"county",
+    "Description":"Jail",
+    "Age":"NA",
+    "Gender":"NA",
+    "Capacity":"NA",
+    "BJS.ID":"NA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -117.1642716,32.71725211 ]
+    },
+    "properties": {
+    "Facility.ID":1725,
+    "Jurisdiction":"county",
+    "State":"California",
+    "Name":"SAN DIEGO COUNTY JAILS",
+    "County":"SAN DIEGO",
+    "jurisdiction_scraper":"county",
+    "Description":"Jail",
+    "Age":"NA",
+    "Gender":"NA",
+    "Capacity":"944",
+    "BJS.ID":"NA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -121.9063,37.35147 ]
+    },
+    "properties": {
+    "Facility.ID":1726,
+    "Jurisdiction":"county",
+    "State":"California",
+    "Name":"SANTA CLARA COUNTY JAIL",
+    "County":"SANTA CLARA",
+    "jurisdiction_scraper":"county",
+    "Description":"Jail",
+    "Age":"NA",
+    "Gender":"NA",
+    "Capacity":"1593",
+    "BJS.ID":"NA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -121.8877904,37.71784065 ]
+    },
+    "properties": {
+    "Facility.ID":1727,
+    "Jurisdiction":"county",
+    "State":"California",
+    "Name":"SANTA RITA JAIL",
+    "County":"ALAMEDA",
+    "jurisdiction_scraper":"county",
+    "Description":"Jail",
+    "Age":"NA",
+    "Gender":"NA",
+    "Capacity":"4000",
+    "BJS.ID":"NA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -117.442225,34.559424 ]
+    },
+    "properties": {
+    "Facility.ID":1773,
+    "Jurisdiction":"immigration",
+    "State":"California",
+    "Name":"ADELANTO ICE PROCESSING CENTER",
+    "County":"San Bernardino",
+    "jurisdiction_scraper":"immigration",
+    "Description":"NA",
+    "Age":"NA",
+    "Gender":"Mixed",
+    "Capacity":"NA",
+    "BJS.ID":"NA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -119.225818,35.6681 ]
+    },
+    "properties": {
+    "Facility.ID":1811,
+    "Jurisdiction":"immigration",
+    "State":"California",
+    "Name":"ICE GOLDEN STATE ANNEX FACILITY",
+    "County":"Kern",
+    "jurisdiction_scraper":"immigration",
+    "Description":"NA",
+    "Age":"NA",
+    "Gender":"Mixed",
+    "Capacity":"NA",
+    "BJS.ID":"NA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -115.541,32.68755 ]
+    },
+    "properties": {
+    "Facility.ID":1817,
+    "Jurisdiction":"immigration",
+    "State":"California",
+    "Name":"ICE IMPERIAL REGIONAL DETENTION FACILITY",
+    "County":"Imperial",
+    "jurisdiction_scraper":"immigration",
+    "Description":"NA",
+    "Age":"NA",
+    "Gender":"Mixed",
+    "Capacity":"NA",
+    "BJS.ID":"NA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -118.23963,34.05447 ]
+    },
+    "properties": {
+    "Facility.ID":1826,
+    "Jurisdiction":"immigration",
+    "State":"California",
+    "Name":"ICE LA STAGING",
+    "County":"Los Angeles",
+    "jurisdiction_scraper":"immigration",
+    "Description":"NA",
+    "Age":"NA",
+    "Gender":"NA",
+    "Capacity":"NA",
+    "BJS.ID":"NA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -119.006075,35.38009 ]
+    },
+    "properties": {
+    "Facility.ID":1836,
+    "Jurisdiction":"immigration",
+    "State":"California",
+    "Name":"ICE MESA VERDE DETENTION FACILITY",
+    "County":"Kern",
+    "jurisdiction_scraper":"immigration",
+    "Description":"NA",
+    "Age":"NA",
+    "Gender":"Mixed",
+    "Capacity":"NA",
+    "BJS.ID":"NA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -117.170912,32.724103 ]
+    },
+    "properties": {
+    "Facility.ID":1846,
+    "Jurisdiction":"immigration",
+    "State":"California",
+    "Name":"ICE OTAY MESA DETENTION CENTER SAN DIEGO CDF",
+    "County":"San Diego",
+    "jurisdiction_scraper":"immigration",
+    "Description":"NA",
+    "Age":"NA",
+    "Gender":"Mixed",
+    "Capacity":"NA",
+    "BJS.ID":"NA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -121.7303,38.66101 ]
+    },
+    "properties": {
+    "Facility.ID":1879,
+    "Jurisdiction":"county",
+    "State":"California",
+    "Name":"YOLO COUNTY JAIL",
+    "County":"YOLO",
+    "jurisdiction_scraper":"county",
+    "Description":"Jail",
+    "Age":"NA",
+    "Gender":"NA",
+    "Capacity":"NA",
+    "BJS.ID":"NA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -121.586736,39.140676 ]
+    },
+    "properties": {
+    "Facility.ID":1991,
+    "Jurisdiction":"immigration",
+    "State":"California",
+    "Name":"ICE YUBA COUNTY JAIL",
+    "County":"Yuba",
+    "jurisdiction_scraper":"immigration",
+    "Description":"NA",
+    "Age":"NA",
+    "Gender":"Mixed",
+    "Capacity":"NA",
+    "BJS.ID":"NA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -119.543418,37.155177 ]
+    },
+    "properties": {
+    "Facility.ID":2029,
+    "Jurisdiction":"state",
+    "State":"California",
+    "Name":"YOUTHFUL OFFENDER SYSTEM",
+    "County":"NA",
+    "jurisdiction_scraper":"state",
+    "Description":"Geographic",
+    "Age":"Juvenile",
+    "Gender":"NA",
+    "Capacity":"NA",
+    "BJS.ID":"NA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -119.543418,37.155177 ]
+    },
+    "properties": {
+    "Facility.ID":2030,
+    "Jurisdiction":"state",
+    "State":"California",
+    "Name":"UNSPECIFIED FACILITIES",
+    "County":"NA",
+    "jurisdiction_scraper":"state",
+    "Description":"Geographic",
+    "Age":"NA",
+    "Gender":"NA",
+    "Capacity":"NA",
+    "BJS.ID":"NA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -119.543418,37.155177 ]
+    },
+    "properties": {
+    "Facility.ID":2038,
+    "Jurisdiction":"state",
+    "State":"California",
+    "Name":"STATEWIDE FOR NON-SPECIFIC FACILITIES",
+    "County":"NA",
+    "jurisdiction_scraper":"state",
+    "Description":"Geographic",
+    "Age":"NA",
+    "Gender":"NA",
+    "Capacity":"NA",
+    "BJS.ID":"NA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.405441,37.77499 ]
+    },
+    "properties": {
+    "Facility.ID":2075,
+    "Jurisdiction":"county",
+    "State":"California",
+    "Name":"SAN FRANCISCO COUNTY JAIL",
+    "County":"NA",
+    "jurisdiction_scraper":"county",
+    "Description":"Jail",
+    "Age":"NA",
+    "Gender":"NA",
+    "Capacity":"NA",
+    "BJS.ID":"NA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.26411,37.800263 ]
+    },
+    "properties": {
+    "Facility.ID":2078,
+    "Jurisdiction":"county",
+    "State":"California",
+    "Name":"ALAMEDA COUNTY STAFF",
+    "County":"ALAMEDA",
+    "jurisdiction_scraper":"state",
+    "Description":"NA",
+    "Age":"NA",
+    "Gender":"NA",
+    "Capacity":"NA",
+    "BJS.ID":"NA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -120.36101,36.170199 ]
+    },
+    "properties": {
+    "Facility.ID":2079,
+    "Jurisdiction":"county",
+    "State":"California",
+    "Name":"FRESNO COUNTY STAFF",
+    "County":"FRESNO",
+    "jurisdiction_scraper":"state",
+    "Description":"NA",
+    "Age":"NA",
+    "Gender":"NA",
+    "Capacity":"NA",
+    "BJS.ID":"NA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -124.14891,40.780564 ]
+    },
+    "properties": {
+    "Facility.ID":2080,
+    "Jurisdiction":"county",
+    "State":"California",
+    "Name":"HUMBOLDT COUNTY STAFF",
+    "County":"HUMBOLDT",
+    "jurisdiction_scraper":"state",
+    "Description":"NA",
+    "Age":"NA",
+    "Gender":"NA",
+    "Capacity":"NA",
+    "BJS.ID":"NA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -114.53152,32.795556 ]
+    },
+    "properties": {
+    "Facility.ID":2081,
+    "Jurisdiction":"county",
+    "State":"California",
+    "Name":"IMPERIAL COUNTY STAFF",
+    "County":"IMPERIAL",
+    "jurisdiction_scraper":"state",
+    "Description":"NA",
+    "Age":"NA",
+    "Gender":"NA",
+    "Capacity":"NA",
+    "BJS.ID":"NA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -118.85445,35.213446 ]
+    },
+    "properties": {
+    "Facility.ID":2082,
+    "Jurisdiction":"county",
+    "State":"California",
+    "Name":"KERN COUNTY STAFF",
+    "County":"KERN",
+    "jurisdiction_scraper":"state",
+    "Description":"NA",
+    "Age":"NA",
+    "Gender":"NA",
+    "Capacity":"NA",
+    "BJS.ID":"NA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -118.24361,33.97331 ]
+    },
+    "properties": {
+    "Facility.ID":2083,
+    "Jurisdiction":"county",
+    "State":"California",
+    "Name":"LOS ANGELES COUNTY STAFF",
+    "County":"LOS ANGELES",
+    "jurisdiction_scraper":"state",
+    "Description":"NA",
+    "Age":"NA",
+    "Gender":"NA",
+    "Capacity":"NA",
+    "BJS.ID":"NA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -123.70535,39.214084 ]
+    },
+    "properties": {
+    "Facility.ID":2084,
+    "Jurisdiction":"county",
+    "State":"California",
+    "Name":"MENDOCINO COUNTY STAFF",
+    "County":"MENDOCINO",
+    "jurisdiction_scraper":"state",
+    "Description":"NA",
+    "Age":"NA",
+    "Gender":"NA",
+    "Capacity":"NA",
+    "BJS.ID":"NA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -120.64422,37.020964 ]
+    },
+    "properties": {
+    "Facility.ID":2085,
+    "Jurisdiction":"county",
+    "State":"California",
+    "Name":"MERCED COUNTY STAFF",
+    "County":"MERCED",
+    "jurisdiction_scraper":"state",
+    "Description":"NA",
+    "Age":"NA",
+    "Gender":"NA",
+    "Capacity":"NA",
+    "BJS.ID":"NA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -120.97872,35.755566 ]
+    },
+    "properties": {
+    "Facility.ID":2086,
+    "Jurisdiction":"county",
+    "State":"California",
+    "Name":"MONTEREY COUNTY STAFF",
+    "County":"MONTEREY",
+    "jurisdiction_scraper":"state",
+    "Description":"NA",
+    "Age":"NA",
+    "Gender":"NA",
+    "Capacity":"NA",
+    "BJS.ID":"NA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -118.00799,33.843903 ]
+    },
+    "properties": {
+    "Facility.ID":2087,
+    "Jurisdiction":"county",
+    "State":"California",
+    "Name":"ORANGE COUNTY STAFF",
+    "County":"ORANGE",
+    "jurisdiction_scraper":"state",
+    "Description":"NA",
+    "Age":"NA",
+    "Gender":"NA",
+    "Capacity":"NA",
+    "BJS.ID":"NA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -117.52874,33.995007 ]
+    },
+    "properties": {
+    "Facility.ID":2088,
+    "Jurisdiction":"county",
+    "State":"California",
+    "Name":"RIVERSIDE COUNTY STAFF",
+    "County":"RIVERSIDE",
+    "jurisdiction_scraper":"state",
+    "Description":"NA",
+    "Age":"NA",
+    "Gender":"NA",
+    "Capacity":"NA",
+    "BJS.ID":"NA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -121.49376,38.584351 ]
+    },
+    "properties": {
+    "Facility.ID":2089,
+    "Jurisdiction":"county",
+    "State":"California",
+    "Name":"SACRAMENTO COUNTY STAFF",
+    "County":"SACRAMENTO",
+    "jurisdiction_scraper":"state",
+    "Description":"NA",
+    "Age":"NA",
+    "Gender":"NA",
+    "Capacity":"NA",
+    "BJS.ID":"NA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -117.58974,34.15554 ]
+    },
+    "properties": {
+    "Facility.ID":2090,
+    "Jurisdiction":"county",
+    "State":"California",
+    "Name":"SAN BERNARDINO COUNTY STAFF",
+    "County":"SAN BERNARDINO",
+    "jurisdiction_scraper":"state",
+    "Description":"NA",
+    "Age":"NA",
+    "Gender":"NA",
+    "Capacity":"NA",
+    "BJS.ID":"NA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -116.75532,32.826938 ]
+    },
+    "properties": {
+    "Facility.ID":2091,
+    "Jurisdiction":"county",
+    "State":"California",
+    "Name":"SAN DIEGO COUNTY STAFF",
+    "County":"SAN DIEGO",
+    "jurisdiction_scraper":"state",
+    "Description":"NA",
+    "Age":"NA",
+    "Gender":"NA",
+    "Capacity":"NA",
+    "BJS.ID":"NA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.41733,37.777114 ]
+    },
+    "properties": {
+    "Facility.ID":2092,
+    "Jurisdiction":"county",
+    "State":"California",
+    "Name":"SAN FRANCISCO COUNTY STAFF",
+    "County":"SAN FRANCISCO",
+    "jurisdiction_scraper":"state",
+    "Description":"NA",
+    "Age":"NA",
+    "Gender":"NA",
+    "Capacity":"NA",
+    "BJS.ID":"NA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -121.2234,37.906882 ]
+    },
+    "properties": {
+    "Facility.ID":2093,
+    "Jurisdiction":"county",
+    "State":"California",
+    "Name":"SAN JOAQUIN COUNTY STAFF",
+    "County":"SAN JOAQUIN",
+    "jurisdiction_scraper":"state",
+    "Description":"NA",
+    "Age":"NA",
+    "Gender":"NA",
+    "Capacity":"NA",
+    "BJS.ID":"NA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -120.65252,35.259509 ]
+    },
+    "properties": {
+    "Facility.ID":2094,
+    "Jurisdiction":"county",
+    "State":"California",
+    "Name":"SAN LUIS OBISPO COUNTY STAFF",
+    "County":"SAN LUIS OBISPO",
+    "jurisdiction_scraper":"state",
+    "Description":"NA",
+    "Age":"NA",
+    "Gender":"NA",
+    "Capacity":"NA",
+    "BJS.ID":"NA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.29612,37.51445 ]
+    },
+    "properties": {
+    "Facility.ID":2095,
+    "Jurisdiction":"county",
+    "State":"California",
+    "Name":"SAN MATEO COUNTY STAFF",
+    "County":"SAN MATEO",
+    "jurisdiction_scraper":"state",
+    "Description":"NA",
+    "Age":"NA",
+    "Gender":"NA",
+    "Capacity":"NA",
+    "BJS.ID":"NA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -119.51875,34.402368 ]
+    },
+    "properties": {
+    "Facility.ID":2096,
+    "Jurisdiction":"county",
+    "State":"California",
+    "Name":"SANTA BARBARA COUNTY STAFF",
+    "County":"SANTA BARBARA",
+    "jurisdiction_scraper":"state",
+    "Description":"NA",
+    "Age":"NA",
+    "Gender":"NA",
+    "Capacity":"NA",
+    "BJS.ID":"NA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.13696,37.36656 ]
+    },
+    "properties": {
+    "Facility.ID":2097,
+    "Jurisdiction":"county",
+    "State":"California",
+    "Name":"SANTA CLARA COUNTY STAFF",
+    "County":"SANTA CLARA",
+    "jurisdiction_scraper":"state",
+    "Description":"NA",
+    "Age":"NA",
+    "Gender":"NA",
+    "Capacity":"NA",
+    "BJS.ID":"NA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.16438,38.069204 ]
+    },
+    "properties": {
+    "Facility.ID":2098,
+    "Jurisdiction":"county",
+    "State":"California",
+    "Name":"SOLANO COUNTY STAFF",
+    "County":"SOLANO",
+    "jurisdiction_scraper":"state",
+    "Description":"NA",
+    "Age":"NA",
+    "Gender":"NA",
+    "Capacity":"NA",
+    "BJS.ID":"NA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -120.95632,37.585454 ]
+    },
+    "properties": {
+    "Facility.ID":2099,
+    "Jurisdiction":"county",
+    "State":"California",
+    "Name":"STANISLAUS COUNTY STAFF",
+    "County":"STANISLAUS",
+    "jurisdiction_scraper":"state",
+    "Description":"NA",
+    "Age":"NA",
+    "Gender":"NA",
+    "Capacity":"NA",
+    "BJS.ID":"NA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -118.91642,34.184847 ]
+    },
+    "properties": {
+    "Facility.ID":2100,
+    "Jurisdiction":"county",
+    "State":"California",
+    "Name":"VENTURA COUNTY STAFF",
+    "County":"VENTURA",
+    "jurisdiction_scraper":"state",
+    "Description":"NA",
+    "Age":"NA",
+    "Gender":"NA",
+    "Capacity":"NA",
+    "BJS.ID":"NA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -121.54056,38.594722 ]
+    },
+    "properties": {
+    "Facility.ID":2101,
+    "Jurisdiction":"county",
+    "State":"California",
+    "Name":"YOLO COUNTY STAFF",
+    "County":"YOLO",
+    "jurisdiction_scraper":"state",
+    "Description":"NA",
+    "Age":"NA",
+    "Gender":"NA",
+    "Capacity":"NA",
+    "BJS.ID":"NA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -119.45496,35.95859 ]
+    },
+    "properties": {
+    "Facility.ID":2102,
+    "Jurisdiction":"county",
+    "State":"California",
+    "Name":"TULARE COUNTY STAFF",
+    "County":"TULARE",
+    "jurisdiction_scraper":"state",
+    "Description":"NA",
+    "Age":"NA",
+    "Gender":"NA",
+    "Capacity":"NA",
+    "BJS.ID":"NA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -119.7771277,34.44490502 ]
+    },
+    "properties": {
+    "Facility.ID":2178,
+    "Jurisdiction":"county",
+    "State":"California",
+    "Name":"SANTA BARBARA JAILS",
+    "County":"SANTA BARBARA",
+    "jurisdiction_scraper":"county",
+    "Description":"NA",
+    "Age":"NA",
+    "Gender":"NA",
+    "Capacity":"659",
+    "BJS.ID":"NA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -119.543418,37.155177 ]
+    },
+    "properties": {
+    "Facility.ID":2299,
+    "Jurisdiction":"state",
+    "State":"California",
+    "Name":"DIVISION OF JUVENILE JUSTICE",
+    "County":"NA",
+    "jurisdiction_scraper":"state",
+    "Description":"NA",
+    "Age":"Juvenile",
+    "Gender":"NA",
+    "Capacity":"NA",
+    "BJS.ID":"NA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -119.543418,37.155177 ]
+    },
+    "properties": {
+    "Facility.ID":2300,
+    "Jurisdiction":"state",
+    "State":"California",
+    "Name":"OTHER CCHCS",
+    "County":"NA",
+    "jurisdiction_scraper":"state",
+    "Description":"NA",
+    "Age":"NA",
+    "Gender":"NA",
+    "Capacity":"NA",
+    "BJS.ID":"NA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -119.543418,37.155177 ]
+    },
+    "properties": {
+    "Facility.ID":2301,
+    "Jurisdiction":"state",
+    "State":"California",
+    "Name":"OTHER CDCR",
+    "County":"NA",
+    "jurisdiction_scraper":"state",
+    "Description":"NA",
+    "Age":"NA",
+    "Gender":"NA",
+    "Capacity":"NA",
+    "BJS.ID":"NA"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -119.543418,37.155177 ]
+    },
+    "properties": {
+    "Facility.ID":2302,
+    "Jurisdiction":"state",
+    "State":"California",
+    "Name":"PAROLE",
+    "County":"NA",
+    "jurisdiction_scraper":"state",
+    "Description":"NA",
+    "Age":"NA",
+    "Gender":"NA",
+    "Capacity":"NA",
+    "BJS.ID":"NA"
+    }
+  }
+]
+}

@@ -17,7 +17,7 @@ const Covid19 = () => {
 
   const legendItemsReverse = [...legendItems].reverse();
 
-  const load = (dateString) => {
+  const loadCounties = (dateString) => {
     console.log("load");
     const loadcountiesTask = new LoadcountiesTask();
     loadcountiesTask.load((counties) => setcounties(counties), dateString);
@@ -40,7 +40,7 @@ const Covid19 = () => {
 
   //load the page if the dateString changes
   useEffect(() => {
-    load(dateString);
+    loadCounties(dateString);
   }, [dateString]);
 
 

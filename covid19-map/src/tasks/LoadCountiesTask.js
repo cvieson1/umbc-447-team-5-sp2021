@@ -19,8 +19,28 @@ class LoadcountyTask {
     });
   };
 
-  #getNextRecentDate = (dateString) =>{
+   //yyyy-mm-dd
+   #getPreviousDay = (dateString) =>{
+    if(dateString){
+      console.log("cur day: " + dateString);
+      const day = parseInt(dateString.substring(8,9));
+      const month = parseInt(dateString.substring(7,6));
+      const year = parseInt(dateString.substring(0,3));
 
+      const date1 = new Date(Date.UTC(year, month-1, day));
+
+      //subtracts 1 day
+      const prevDateMilli = date1.valueOf() - 86400000;
+      const prevDate = new Date(prevDateMilli)
+
+      const prevString = prevDate.getFullYear() 
+    + "-" + (prevDate.getUTCMonth()+1 < 10 ? ("0" + (prevDate.getUTCMonth()+1)) : prevDate.getUTCMonth()+1)
+    + "-" + (prevDate.getUTCDate() < 10 ? ("0" + prevDate.getUTCDate()) : prevDate.getUTCDate());
+
+      console.log("yesterday: " + prevString);
+      return prevDate;
+    }
+    return dateString;
   };
 
   #processCovidData = (covidcounties, dateString) => {

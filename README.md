@@ -33,7 +33,13 @@ to a new line in .gitignore (see how `venv` is already there?)
 
 # To get started with this project:
 
-Clone the repository
+1. Clone the repository:
+`git clone git@github.com:cvieson1/umbc-447-team-5-sp2021.git .`
 
-Create and enter a python virtual environment
+2. Go into the root folder and install dependencies: 
+`cd covid19-map/`
 
+`npm install`
+
+3. Run the server: 
+`npm start`

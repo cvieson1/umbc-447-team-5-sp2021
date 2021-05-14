@@ -11,13 +11,13 @@ const Covid19 = () => {
 
   const legendItemsReverse = [...legendItems].reverse();
 
-  const load = () => {
+  const loadCounties = () => {
     console.log("load");
     const loadcountiesTask = new LoadcountiesTask();
     loadcountiesTask.load((counties) => setcounties(counties));
   };
 
-  useEffect(load, []);
+  useEffect(loadCounties, []);
 
   return (
     <div>

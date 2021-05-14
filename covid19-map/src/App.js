@@ -5,6 +5,7 @@ import axios from 'axios'
 
 
 
+
 function App() {
   const [getMessage, setGetMessage] = useState({})
 
@@ -20,7 +21,7 @@ function App() {
 
   return (
     <div className ="App">
-
+      
       <div>
         <Covid19 />
       </div>

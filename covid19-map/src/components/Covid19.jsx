@@ -4,21 +4,12 @@ import CovidMap from "./CovidMap";
 import LoadcountiesTask from "../tasks/LoadCountiesTask";
 import Legend from "./Legend";
 import legendItems from "../entities/LegendItems";
-import { MapContainer as Map, GeoJSON, Marker, Popup } from "react-leaflet";
-import L from 'leaflet';
-import prison from '../data/icons/prison.jpg'
+import { MapContainer as Map } from "react-leaflet";
 
 
 import PrisonMap from "./PrisonMap";
 import LoadPrisonsTask from "../tasks/LoadPrisonsTasks";
 
-
-const myIcon = new L.Icon({
-  iconUrl: prison,
-  iconRetinaUrl: prison,
-  popupAnchor: [-0,-0],
-  iconSize: [25, 25]
-});
 
 const Covid19 = () => {
   const [counties, setcounties] = useState([]);

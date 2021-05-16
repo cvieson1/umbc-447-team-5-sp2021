@@ -1,12 +1,10 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import "leaflet/dist/leaflet.css";
 import "./CovidMap.css";
-import L from 'leaflet';
 //import prison from '../data/icons/prison.jpg';
 
 //added 
-import PrisonMap from "./PrisonMap";
-import LoadPrisonsTask from "../tasks/LoadPrisonsTasks";
+
 //added
 import {  GeoJSON } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
@@ -36,8 +34,7 @@ const CovidMap = ({ counties }) => {
     const confirmedText = county.properties.confirmedText;
     layer.bindPopup(`${name} ${confirmedText}`);
   };
-  let a =[35.97394934 , -120.1231018];
-  let b =[40.97394934 , -120.1231018];
+
  // const onEachPrison = 
   return (
   

@@ -2,7 +2,7 @@
 import { MapContainer as Map, GeoJSON, Marker, Popup, TileLayer } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
 import "./CovidMap.css";*/
-import L, { marker } from 'leaflet';
+import L from 'leaflet';
 import prison from '../data/icons/prison.jpg';
 
 //added 

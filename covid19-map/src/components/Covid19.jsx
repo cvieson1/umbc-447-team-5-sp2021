@@ -24,7 +24,6 @@ const myIcon = new L.Icon({
   iconSize: [25, 25]
 });
 
-
 const Covid19 = () => {
   const [counties, setcounties] = useState([]);
   const [firstDate, setFirstDate] = useState(new Date());

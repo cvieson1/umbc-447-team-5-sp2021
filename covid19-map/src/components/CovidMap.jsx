@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "leaflet/dist/leaflet.css";
 import "./CovidMap.css";
+import { MapContainer as Map, GeoJSON, Marker, Popup } from "react-leaflet";
 import L from 'leaflet';
 //import prison from '../data/icons/prison.jpg';
 
@@ -8,7 +9,6 @@ import L from 'leaflet';
 import PrisonMap from "./PrisonMap";
 import LoadPrisonsTask from "../tasks/LoadPrisonsTasks";
 //added
-import {  GeoJSON } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
 /*
 const myIcon = new L.Icon({

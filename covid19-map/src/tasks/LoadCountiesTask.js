@@ -1,11 +1,16 @@
 import papa from "papaparse";
 import legendItems from "../entities/LegendItems";
+
 import { features } from "../data/counties.json";
+//import * from "../data/prisons.json";
+
+//import React, { Component } from 'react';
+//import { StyleSheet, Text, View, Button } from 'react-native';
 //    this.setState(features);
 
-class LoadcountyTask {
+class LoadCountyTask {
   covidUrl =
-    "https://raw.githubusercontent.com/nytimes/covid-19-data/master/us-counties.csv";
+    "https://raw.githubusercontent.com/uclalawcovid19behindbars/historical-data/main/data/CA-historical-data.csv";
 
   setState = null;
 
@@ -19,31 +24,51 @@ class LoadcountyTask {
     });
   };
 
-  #processCovidData = (covidcounties) => {
+  /*class LoadPrisonTask {
+    covidUrl =
+      "https://raw.githubusercontent.com/uclalawcovid19behindbars/historical-data/main/data/CA-historical-data.csv";
+  
+    setState = null;
+  
+    load = (setState) => {
+      this.setState = setState;
+  
+      papa.parse(this.covidUrl, {
+        download: true,
+        header: true,
+        complete: (result) => this.#processCovidData(result.data),
+      });
+    }; */
+  #processCovidData = (covidCounties) => {
     for (let i = 0; i < features.length; i++) {
       const county = features[i];
+      //{features[i].map()}
       //console.log(county);
-      const covidcounty = covidcounties.find(
-        (covidcounty) => county.properties.name === covidcounty.county
+      const covidCounty = covidCounties.find(
+        (covidCounty) => county.properties.name.toUpperCase() === covidCounty.County
+         && county.properties.state.toUpperCase()  === covidCounty.State.toUpperCase() 
+         //&& covidCounty.Date === "2020-05-22"
       );
 
-      county.properties.confirmed = 0;
-      county.properties.confirmedText = 0;
+      /*county.properties.confirmed = 0;
+      county.properties.confirmedText = 0;*/
 
-      if (covidcounty != null) {
-        let confirmed = Number(covidcounty.cases);
+      if (covidCounty != null) {
+        //if(covidcounty.date === "20200510"){
+        let confirmed = covidCounty.Name//Number(covidCounty.ID);//covidCounty.ID);
         county.properties.confirmed = confirmed;
         county.properties.confirmedText = this.#formatNumberWithCommas(
           confirmed
         );
-      }
-      this.#setcountyColor(county);
+      //}
+    }
+      this.#setCountyColor(county);
     }
 
     this.setState(features);
   };
 
-  #setcountyColor = (county) => {
+  #setCountyColor = (county) => {
     const legendItem = legendItems.find((item) =>
       item.isFor(county.properties.confirmed)
     );
@@ -54,6 +79,8 @@ class LoadcountyTask {
   #formatNumberWithCommas = (number) => {
     return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
   };
+
+  //{prisonData.features}
 }
 
-export default LoadcountyTask;
+export default LoadCountyTask;

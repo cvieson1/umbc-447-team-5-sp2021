@@ -1,11 +1,16 @@
 import papa from "papaparse";
 import legendItems from "../entities/LegendItems";
+
 import { features } from "../data/counties.json";
+//import * from "../data/prisons.json";
+
+//import React, { Component } from 'react';
+//import { StyleSheet, Text, View, Button } from 'react-native';
 //    this.setState(features);
 
-class LoadcountyTask {
+class LoadCountyTask {
   covidUrl =
-    "https://raw.githubusercontent.com/nytimes/covid-19-data/master/us-counties.csv";
+    "https://raw.githubusercontent.com/uclalawcovid19behindbars/historical-data/main/data/CA-historical-data.csv";
 
   setState = null;
 
@@ -42,15 +47,16 @@ class LoadcountyTask {
     return dateString;
   };
 
-  #processCovidData = (covidcounties, dateString) => {
+  #processCovidData = (covidCounties, dateString) => {
     for (let i = 0; i < features.length; i++) {
       const county = features[i];
+      //{features[i].map()}
       //console.log(county);
       //console.log(dateString);
-      const countyExist = covidcounties.find((covidcounty) => county.properties.name === covidcounty.county);
+      const countyExist = covidCounties.find((covidcounty) => county.properties.name === covidcounty.county);
       if(countyExist != null){
 
-        let covidcounty = covidcounties.find(
+        let covidcounty = covidCounties.find(
           //yyyy-mm-dd
           (covidcounty) => county.properties.name === covidcounty.county && covidcounty.date === dateString
         );
@@ -59,7 +65,7 @@ class LoadcountyTask {
         while(!covidcounty){
           newDateString = this.#getPreviousDay(newDateString);
           const newNewDateString = newDateString;
-          covidcounty = covidcounties.find(
+          covidcounty = covidCounties.find(
             //yyyy-mm-dd
             (covidcounty) => county.properties.name === covidcounty.county && covidcounty.date === newNewDateString
           );
@@ -86,7 +92,7 @@ class LoadcountyTask {
           console.log("found: " + county.properties.name + ": " + county.properties.confirmed);
           console.log("found:" + county.properties.name + ": " + county.properties.deaths);
         }
-        this.#setcountyColor(county);
+        this.#setCountyColor(county);
       }
      
     }
@@ -95,7 +101,7 @@ class LoadcountyTask {
     this.setState(features);
   };
 
-  #setcountyColor = (county) => {
+  #setCountyColor = (county) => {
     const legendItem = legendItems.find((item) =>
       item.isFor(county.properties.confirmed)
     );
@@ -106,6 +112,8 @@ class LoadcountyTask {
   #formatNumberWithCommas = (number) => {
     return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
   };
+
+  //{prisonData.features}
 }
 
-export default LoadcountyTask;
+export default LoadCountyTask;

@@ -8,7 +8,7 @@ import L from 'leaflet';
 import PrisonMap from "./PrisonMap";
 import LoadPrisonsTask from "../tasks/LoadPrisonsTasks";
 //added
-import { MapContainer as Map, GeoJSON, Marker, Popup } from "react-leaflet";
+import {  GeoJSON } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
 /*
 const myIcon = new L.Icon({
@@ -21,13 +21,7 @@ const myIcon = new L.Icon({
 
 
 const CovidMap = ({ counties }) => {
-  const [prisons, setPrisons] = useState([]);
-  const load = () => {
-    console.log("load");
-    const loadPrisonsTask = new LoadPrisonsTask();
-    loadPrisonsTask.load((prisons) => setPrisons(prisons));
-  };
-  useEffect(load, []);
+
 
   const mapStyle = {
     fillColor: "white",
@@ -55,10 +49,8 @@ const CovidMap = ({ counties }) => {
         data={counties}
         onEachFeature={onEachCounty}  
       /> 
-        <PrisonMap prisons={prisons} />
 
-    </Map>
-            
+    </Map>            
     
   
   );

@@ -5,11 +5,25 @@ import LoadcountiesTask from "../tasks/LoadCountiesTask";
 import Legend from "./Legend";
 import legendItems from "../entities/LegendItems";
 import { MapContainer as Map, GeoJSON, Marker, Popup } from "react-leaflet";
+import L from 'leaflet';
+import prison from '../data/icons/prison.jpg'
+
+
+import PrisonMap from "./PrisonMap";
+import LoadPrisonsTask from "../tasks/LoadPrisonsTasks";
 
 import DatePicker from "react-datepicker";
 
 import "react-datepicker/dist/react-datepicker.css";
 import SearchBar from "./Searchbar";
+
+const myIcon = new L.Icon({
+  iconUrl: prison,
+  iconRetinaUrl: prison,
+  popupAnchor: [-0,-0],
+  iconSize: [25, 25]
+});
+
 
 const Covid19 = () => {
   const [counties, setcounties] = useState([]);
@@ -44,6 +58,15 @@ const Covid19 = () => {
   }, [dateString]);
 
 
+  const [prisons, setPrisons] = useState([]);
+  const loadPrisons = () => {
+    console.log("load");
+    const loadPrisonsTask = new LoadPrisonsTask();
+    loadPrisonsTask.load((prisons) => setPrisons(prisons));
+  };
+  useEffect(loadPrisons, []);
+
+
   return (
     <div>
       <nav class="navbar navbar-light bg-light">
@@ -69,6 +92,7 @@ const Covid19 = () => {
           <div>
 
             <CovidMap counties={counties} />
+            <PrisonMap prisons={prisons} /> 
             <Legend legendItems={legendItemsReverse} />
             
           </div>

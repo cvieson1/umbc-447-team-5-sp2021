@@ -1,6 +1,6 @@
 {
    "type": "FeatureCollection",
-   "prisonFeatures": [
+   "features": [
   {
     "type": "Feature",
     "geometry": {

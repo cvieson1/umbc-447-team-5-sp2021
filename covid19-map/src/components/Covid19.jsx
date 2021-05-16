@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react";
-
 import Loading from "./Loading";
 import CovidMap from "./CovidMap";
 import LoadcountiesTask from "../tasks/LoadCountiesTask";
 import Legend from "./Legend";
 import legendItems from "../entities/LegendItems";
+import { MapContainer as Map, GeoJSON, Marker, Popup } from "react-leaflet";
 
 import DatePicker from "react-datepicker";
 
@@ -33,7 +33,7 @@ const Covid19 = () => {
   + "-" + (firstDate.getMonth()+1 < 10 ? ("0" + (firstDate.getMonth()+1)) : firstDate.getMonth()+1)
   + "-" + (firstDate.getDate() < 10 ? ("0" + firstDate.getDate()) : firstDate.getDate());
 
-    load(dateString);
+    loadCounties(dateString);
     e.preventDefault();
     
   };
@@ -80,34 +80,3 @@ const Covid19 = () => {
 
 export default Covid19;
 
-/*
-class Covid19 extends Component {
-  state = {
-    counties: [],
-  };
-
-  loadcountyTask = new LoadcountyTask();
-
-  componentDidMount() {
-    this.loadcountyTask.load((counties) => this.setState({ counties }));
-  }
-
-  render() {
-    const { counties } = this.state;
-    return (
-      <div>
-        {counties.length === 0 ? (
-          <Loading />
-        ) : (
-          <div>
-            <CovidMap counties={counties} />
-            <Legend legendItems={legendItems} />
-          </div>
-        )}
-      </div>
-    );
-  }
-}
-
-export default Covid19;
-*/

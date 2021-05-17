@@ -1,4 +1,5 @@
 import papa from "papaparse";
+import prisonLocs from "../data/prisonLoc.json"
 //import legendItems from "../entities/LegendItems";
 //import { features } from "../data/prisons.json";
 //    this.setState(features);
@@ -57,8 +58,9 @@ class LoadprisonTask {
     //ignore header line
     if (prison[0] !== "FacilityID"){
       //if selected date and prison is not already in newPrisons
-      console.log("prison: " + prison[3])
-      if( /*prison[4] === dateString && */undefined === newPrisons.find( (x) => x[0] === prison[3] )){
+      
+      if( undefined === newPrisons.find( (x) => x[0] === prison[3]) && prison[4] === dateString ){
+        console.log("dateString: " + dateString + " prisonDate: " + prison[4])
         //console.log("prison found: " + prison[3]);
         const thisPrison = [
           prison[3], //name 0
@@ -71,6 +73,10 @@ class LoadprisonTask {
 
         ];
         newPrisons.push(thisPrison);
+        
+      }
+      else if(dateString !== "2020-01-01"){
+        this.#processRow(prison, this.#getPreviousDay(dateString), newPrisons, key)
       }
     }
   }

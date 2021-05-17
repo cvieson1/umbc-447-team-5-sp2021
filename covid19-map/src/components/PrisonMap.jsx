@@ -54,6 +54,15 @@ const PrisonMap = (prisons) => {
     return "No info"
   }
 
+  const getDate = (name) =>  {
+    for(let i = 0; i < prisons.prisons.length; i++){
+      if(prisons.prisons[i][0] === name){
+        return prisons.prisons[i][5];
+      }
+    }
+    return "No info"
+  }
+
   const renderDots = () => {
     console.log("Prison dots rendering")
     console.log(prisons)
@@ -65,6 +74,7 @@ const PrisonMap = (prisons) => {
             <p>{prison.Name}</p>
             <p>Cases: {getCases(prison.Name)} </p> 
             <p>Deaths: {getDeaths(prison.Name)}</p>
+            <p>Date retrieved: {getDate(prison.Name)}</p>
           </Popup>
 
       </Marker>

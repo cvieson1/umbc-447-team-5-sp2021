@@ -1,5 +1,5 @@
 {
-    "prisons":[
+    "prisonLocs":[
         {
           "Facility.ID": 83,
           "Jurisdiction": "state",

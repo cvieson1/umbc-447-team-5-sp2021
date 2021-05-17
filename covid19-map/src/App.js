@@ -1,7 +1,7 @@
 import React from "react";
 import "./App.css";
 import Covid19 from "./components/Covid19";
-//import axios from 'axios'
+import axios from 'axios'
 
 
 

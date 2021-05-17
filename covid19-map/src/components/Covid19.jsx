@@ -3,6 +3,7 @@ import React, { useState, useEffect } from "react";
 import Loading from "./Loading";
 import CovidMap from "./CovidMap";
 import LoadcountiesTask from "../tasks/LoadCountiesTask";
+import LoadprisonTask from "../tasks/LoadPrisonTask";
 import Legend from "./Legend";
 import legendItems from "../entities/LegendItems";
 
@@ -12,9 +13,12 @@ import "react-datepicker/dist/react-datepicker.css";
 import SearchBar from "./Searchbar";
 import {MapContainer as Map} from "react-leaflet";
 import PrisonMap from "./PrisonMap"
+//import { prisons } from "../data/prisonLoc.json"
 
 const Covid19 = () => {
   const [counties, setcounties] = useState([]);
+  const [prisonPoints, setprisonPoints] = useState([]);
+
   const [firstDate, setFirstDate] = useState(new Date());
 
   const legendItemsReverse = [...legendItems].reverse();
@@ -22,7 +26,10 @@ const Covid19 = () => {
   const load = (dateString) => {
     console.log("load");
     const loadcountiesTask = new LoadcountiesTask();
+    const loadPrisonsTask = new LoadprisonTask();
+    
     loadcountiesTask.load((counties) => setcounties(counties), dateString);
+    loadPrisonsTask.load((prisonPoints) => setprisonPoints(prisonPoints), dateString);
   };
 
   const dateString = firstDate.getFullYear() 
@@ -71,7 +78,7 @@ const Covid19 = () => {
           <div>
             <Map style={{ height: "85vh" }} zoom={6} center={[38.1700, -119.7462]}>
               <CovidMap counties={counties} />
-              <PrisonMap/> 
+              <PrisonMap prisons={prisonPoints}/> 
               
               
             </Map>

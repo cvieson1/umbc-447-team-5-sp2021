@@ -83,14 +83,14 @@ class LoadcountyTask {
           county.properties.deathsText = this.#formatNumberWithCommas(    //added
             deaths
           );
-          console.log("found: " + county.properties.name + ": " + county.properties.confirmed);
-          console.log("found:" + county.properties.name + ": " + county.properties.deaths);
+          //console.log("found: " + county.properties.name + ": " + county.properties.confirmed);
+          //console.log("found:" + county.properties.name + ": " + county.properties.deaths);
         }
         this.#setcountyColor(county);
       }
      
     }
-    console.log("today: " + dateString + " prev: " + this.#getPreviousDay(dateString));
+    //console.log("today: " + dateString + " prev: " + this.#getPreviousDay(dateString));
 
     this.setState(features);
   };

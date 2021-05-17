@@ -1,6 +1,6 @@
 import papa from "papaparse";
 //import legendItems from "../entities/LegendItems";
-import { features } from "../data/prisons.json";
+//import { features } from "../data/prisons.json";
 //    this.setState(features);
 
 class LoadprisonTask {
@@ -10,13 +10,16 @@ class LoadprisonTask {
   setState = null;
 
   load = (setState, dateString) => {
+    console.log("loading prison data")
     this.setState = setState;
-
+    let newPrisons = [];
     papa.parse(this.covidUrl, {
       download: true,
-      header: true,
-      complete: (result) => this.#processCovidData(result.data, dateString),
+      //step: (prison) =>this.#processRow(prison, dateString, newPrisons),
+      complete: (result) =>this.#processData(result.data, dateString, newPrisons)
+      
     });
+    setState(newPrisons);
   };
 
    //yyyy-mm-dd
@@ -42,61 +45,36 @@ class LoadprisonTask {
     return dateString;
   };
 
-  #processCovidData = (covidprisons, dateString) => {
-    for (let i = 0; i < features.length; i++) {
-      const prison = features[i];
-      //console.log(prison);
-      //console.log(dateString);
-      const prisonExist = covidprisons.find((covidprison) => prison.properties.Name === covidprison.Name);
-      if(prisonExist != null){
-
-        let covidprison = covidprisons.find(
-          //yyyy-mm-dd
-          (covidprison) => prison.properties.Name === covidprison.Name && covidprison.Date === dateString
-        );
-        console.log(covidprison);
-        let newDateString = this.#getPreviousDay(dateString);
-        while(!covidprison){
-          newDateString = this.#getPreviousDay(newDateString);
-          const newNewDateString = newDateString;
-          covidprison = covidprisons.find(
-            //yyyy-mm-dd
-            (covidprison) => prison.properties.Name === covidprison.Name && covidprison.Date === newNewDateString
-          );
-
-        }
-        
-        prison.properties.confirmed = 0;
-        prison.properties.confirmedText = 0;
-
-        prison.properties.deaths = 0;  //added
-        prison.properties.deathText = 0; //added
-  
-        if (covidprison != null) {
-          let confirmed = Number(covidprison.cases);
-          let deaths = Number(covidprison.deaths);    //added
-          prison.properties.confirmed = confirmed;
-          prison.properties.deaths = deaths;  //added
-          prison.properties.confirmedText = this.#formatNumberWithCommas(
-            confirmed
-          );
-          prison.properties.deathsText = this.#formatNumberWithCommas(    //added
-            deaths
-          );
-          console.log("found: " + prison.properties.Name + ": " + prison.properties.confirmed);
-          console.log("found:" + prison.properties.Name + ": " + prison.properties.deaths);
-        }
-        //this.#setprisonColor(prison);
+  #processData = (resultData, dateString, prisonList) => {
+    for(let i = 0; i < resultData.length; i++){
+      if(i !== 0){
+        this.#processRow(resultData[i], dateString, prisonList, i);
       }
-     
     }
-    console.log("today: " + dateString + " prev: " + this.#getPreviousDay(dateString));
+  }
 
-    this.setState(features);
-  };
+  #processRow = (prison, dateString, newPrisons, key) => {
+    //ignore header line
+    if (prison[0] !== "FacilityID"){
+      //if selected date and prison is not already in newPrisons
+      console.log("prison: " + prison[3])
+      if( /*prison[4] === dateString && */undefined === newPrisons.find( (x) => x[0] === prison[3] )){
+        //console.log("prison found: " + prison[3]);
+        const thisPrison = [
+          prison[3], //name 0
+          prison[36], // latitude 1
+          prison[37], // longitude 2
+          prison[6], //Residents.Confirmed 3
+          prison[8], //Residents.Deaths 4
+          prison[4], //Date of data 5
+          key
 
-
-
+        ];
+        newPrisons.push(thisPrison);
+      }
+    }
+  }
+  
   #formatNumberWithCommas = (number) => {
     return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
   };

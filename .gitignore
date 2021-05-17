@@ -7,3 +7,4 @@ project
 node_modules
 
 __pycache__
+covid19-map/src/data/UCLA.csv

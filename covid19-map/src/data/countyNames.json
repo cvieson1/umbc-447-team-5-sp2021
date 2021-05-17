@@ -57,7 +57,377 @@
         {"label":"Tuolumne", "value":"Tuolumne"},
         {"label":"Ventura", "value":"Ventura"},
         {"label":"Yolo", "value":"Yolo"},
-        {"label":"Yuba", "value":"Yuba"}
+        {"label":"Yuba", "value":"Yuba"},
+        
+            {
+              "label": "AVENAL STATE PRISON",
+              "value": "AVENAL STATE PRISON"
+            },
+            {
+              "label": "CALIFORNIA CITY CORRECTIONAL FACILITY",
+              "value": "CALIFORNIA CITY CORRECTIONAL FACILITY"
+            },
+            {
+              "label": "CALIFORNIA CORRECTIONAL CENTER",
+              "value": "CALIFORNIA CORRECTIONAL CENTER"
+            },
+            {
+              "label": "CALIFORNIA CORRECTIONAL INSTITUTION",
+              "value": "CALIFORNIA CORRECTIONAL INSTITUTION"
+            },
+            {
+              "label": "CALIFORNIA HEALTH CARE FACILITY",
+              "value": "CALIFORNIA HEALTH CARE FACILITY"
+            },
+            {
+              "label": "CALIFORNIA INSTITUTION FOR MEN",
+              "value": "CALIFORNIA INSTITUTION FOR MEN"
+            },
+            {
+              "label": "CALIFORNIA INSTITUTION FOR WOMEN",
+              "value": "CALIFORNIA INSTITUTION FOR WOMEN"
+            },
+            {
+              "label": "CALIFORNIA MEDICAL FACILITY",
+              "value": "CALIFORNIA MEDICAL FACILITY"
+            },
+            {
+              "label": "CALIFORNIA MENS COLONY",
+              "value": "CALIFORNIA MENS COLONY"
+            },
+            {
+              "label": "CALIFORNIA REHABILITATION CENTER",
+              "value": "CALIFORNIA REHABILITATION CENTER"
+            },
+            {
+              "label": "CALIFORNIA STATE PRISON CORCORAN",
+              "value": "CALIFORNIA STATE PRISON CORCORAN"
+            },
+            {
+              "label": "CALIFORNIA STATE PRISON LOS ANGELES",
+              "value": "CALIFORNIA STATE PRISON LOS ANGELES"
+            },
+            {
+              "label": "CALIFORNIA STATE PRISON SACRAMENTO",
+              "value": "CALIFORNIA STATE PRISON SACRAMENTO"
+            },
+            {
+              "label": "CALIFORNIA STATE PRISON SAN QUENTIN",
+              "value": "CALIFORNIA STATE PRISON SAN QUENTIN"
+            },
+            {
+              "label": "CALIFORNIA STATE PRISON SOLANO",
+              "value": "CALIFORNIA STATE PRISON SOLANO"
+            },
+            {
+              "label": "CALIPATRIA STATE PRISON",
+              "value": "CALIPATRIA STATE PRISON"
+            },
+            {
+              "label": "CENTINELA STATE PRISON",
+              "value": "CENTINELA STATE PRISON"
+            },
+            {
+              "label": "CENTRAL CALIFORNIA WOMENS FACILITY",
+              "value": "CENTRAL CALIFORNIA WOMENS FACILITY"
+            },
+            {
+              "label": "CHUCKAWALLA VALLEY STATE PRISON",
+              "value": "CHUCKAWALLA VALLEY STATE PRISON"
+            },
+            {
+              "label": "CORRECTIONAL TRAINING FACILITY",
+              "value": "CORRECTIONAL TRAINING FACILITY"
+            },
+            {
+              "label": "DEUEL VOCATIONAL INSTITUTION",
+              "value": "DEUEL VOCATIONAL INSTITUTION"
+            },
+            {
+              "label": "FOLSOM STATE PRISON",
+              "value": "FOLSOM STATE PRISON"
+            },
+            {
+              "label": "HIGH DESERT STATE PRISON",
+              "value": "HIGH DESERT STATE PRISON"
+            },
+            {
+              "label": "IRONWOOD STATE PRISON",
+              "value": "IRONWOOD STATE PRISON"
+            },
+            {
+              "label": "KERN VALLEY STATE PRISON",
+              "value": "KERN VALLEY STATE PRISON"
+            },
+            {
+              "label": "LOS ANGELES JAILS",
+              "value": "LOS ANGELES JAILS"
+            },
+            {
+              "label": "MULE CREEK STATE PRISON",
+              "value": "MULE CREEK STATE PRISON"
+            },
+            {
+              "label": "NA CHADERJIAN YOUTH CORRECTIONAL FACILITY",
+              "value": "NA CHADERJIAN YOUTH CORRECTIONAL FACILITY"
+            },
+            {
+              "label": "NORTH KERN STATE PRISON",
+              "value": "NORTH KERN STATE PRISON"
+            },
+            {
+              "label": "NORTHERN CALIFORNIA YOUTH CORRECTIONAL CENTER",
+              "value": "NORTHERN CALIFORNIA YOUTH CORRECTIONAL CENTER"
+            },
+            {
+              "label": "OH CLOSE YOUTH CORRECTIONAL FACILITY",
+              "value": "OH CLOSE YOUTH CORRECTIONAL FACILITY"
+            },
+            {
+              "label": "ORANGE COUNTY JAILS",
+              "value": "ORANGE COUNTY JAILS"
+            },
+            {
+              "label": "PELICAN BAY STATE PRISON",
+              "value": "PELICAN BAY STATE PRISON"
+            },
+            {
+              "label": "PLEASANT VALLEY STATE PRISON",
+              "value": "PLEASANT VALLEY STATE PRISON"
+            },
+            {
+              "label": "RICHARD A MCGEE CORRECTIONAL TRAINING CENTER",
+              "value": "RICHARD A MCGEE CORRECTIONAL TRAINING CENTER"
+            },
+            {
+              "label": "RJ DONOVAN CORRECTIONAL FACILITY",
+              "value": "RJ DONOVAN CORRECTIONAL FACILITY"
+            },
+            {
+              "label": "SALINAS VALLEY STATE PRISON",
+              "value": "SALINAS VALLEY STATE PRISON"
+            },
+            {
+              "label": "SIERRA CONSERVATION CENTER",
+              "value": "SIERRA CONSERVATION CENTER"
+            },
+            {
+              "label": "SUBSTANCE ABUSE TREATMENT FACILITY",
+              "value": "SUBSTANCE ABUSE TREATMENT FACILITY"
+            },
+            {
+              "label": "VALLEY STATE PRISON",
+              "value": "VALLEY STATE PRISON"
+            },
+            {
+              "label": "WASCO STATE PRISON",
+              "value": "WASCO STATE PRISON"
+            },
+            {
+              "label": "CDCR CCHCS WORKSITE LOCATION HUMBOLDT COUNTY",
+              "value": "CDCR CCHCS WORKSITE LOCATION HUMBOLDT COUNTY"
+            },
+            {
+              "label": "CDCR CCHCS WORKSITE LOCATION SAN FRANCISCO COUNTY",
+              "value": "CDCR CCHCS WORKSITE LOCATION SAN FRANCISCO COUNTY"
+            },
+            {
+              "label": "CDCR CCHCS WORKSITE LOCATION YOLO COUNTY",
+              "value": "CDCR CCHCS WORKSITE LOCATION YOLO COUNTY"
+            },
+            {
+              "label": "CDCR CCHCS WORKSITE LOCATION ALAMEDA COUNTY",
+              "value": "CDCR CCHCS WORKSITE LOCATION ALAMEDA COUNTY"
+            },
+            {
+              "label": "CDCR CCHCS WORKSITE LOCATION MERCED COUNTY",
+              "value": "CDCR CCHCS WORKSITE LOCATION MERCED COUNTY"
+            },
+            {
+              "label": "SACRAMENTO COUNTY JAIL",
+              "value": "SACRAMENTO COUNTY JAIL"
+            },
+            {
+              "label": "SAN DIEGO COUNTY JAILS",
+              "value": "SAN DIEGO COUNTY JAILS"
+            },
+            {
+              "label": "SANTA CLARA COUNTY JAIL",
+              "value": "SANTA CLARA COUNTY JAIL"
+            },
+            {
+              "label": "SANTA RITA JAIL",
+              "value": "SANTA RITA JAIL"
+            },
+            {
+              "label": "ADELANTO ICE PROCESSING CENTER",
+              "value": "ADELANTO ICE PROCESSING CENTER"
+            },
+            {
+              "label": "ICE GOLDEN STATE ANNEX FACILITY",
+              "value": "ICE GOLDEN STATE ANNEX FACILITY"
+            },
+            {
+              "label": "ICE IMPERIAL REGIONAL DETENTION FACILITY",
+              "value": "ICE IMPERIAL REGIONAL DETENTION FACILITY"
+            },
+            {
+              "label": "ICE LA STAGING",
+              "value": "ICE LA STAGING"
+            },
+            {
+              "label": "ICE MESA VERDE DETENTION FACILITY",
+              "value": "ICE MESA VERDE DETENTION FACILITY"
+            },
+            {
+              "label": "ICE OTAY MESA DETENTION CENTER SAN DIEGO CDF",
+              "value": "ICE OTAY MESA DETENTION CENTER SAN DIEGO CDF"
+            },
+            {
+              "label": "YOLO COUNTY JAIL",
+              "value": "YOLO COUNTY JAIL"
+            },
+            {
+              "label": "ICE YUBA COUNTY JAIL",
+              "value": "ICE YUBA COUNTY JAIL"
+            },
+            {
+              "label": "YOUTHFUL OFFENDER SYSTEM",
+              "value": "YOUTHFUL OFFENDER SYSTEM"
+            },
+            {
+              "label": "UNSPECIFIED FACILITIES",
+              "value": "UNSPECIFIED FACILITIES"
+            },
+            {
+              "label": "STATEWIDE FOR NON-SPECIFIC FACILITIES",
+              "value": "STATEWIDE FOR NON-SPECIFIC FACILITIES"
+            },
+            {
+              "label": "SAN FRANCISCO COUNTY JAIL",
+              "value": "SAN FRANCISCO COUNTY JAIL"
+            },
+            {
+              "label": "ALAMEDA COUNTY STAFF",
+              "value": "ALAMEDA COUNTY STAFF"
+            },
+            {
+              "label": "FRESNO COUNTY STAFF",
+              "value": "FRESNO COUNTY STAFF"
+            },
+            {
+              "label": "HUMBOLDT COUNTY STAFF",
+              "value": "HUMBOLDT COUNTY STAFF"
+            },
+            {
+              "label": "IMPERIAL COUNTY STAFF",
+              "value": "IMPERIAL COUNTY STAFF"
+            },
+            {
+              "label": "KERN COUNTY STAFF",
+              "value": "KERN COUNTY STAFF"
+            },
+            {
+              "label": "LOS ANGELES COUNTY STAFF",
+              "value": "LOS ANGELES COUNTY STAFF"
+            },
+            {
+              "label": "MENDOCINO COUNTY STAFF",
+              "value": "MENDOCINO COUNTY STAFF"
+            },
+            {
+              "label": "MERCED COUNTY STAFF",
+              "value": "MERCED COUNTY STAFF"
+            },
+            {
+              "label": "MONTEREY COUNTY STAFF",
+              "value": "MONTEREY COUNTY STAFF"
+            },
+            {
+              "label": "ORANGE COUNTY STAFF",
+              "value": "ORANGE COUNTY STAFF"
+            },
+            {
+              "label": "RIVERSIDE COUNTY STAFF",
+              "value": "RIVERSIDE COUNTY STAFF"
+            },
+            {
+              "label": "SACRAMENTO COUNTY STAFF",
+              "value": "SACRAMENTO COUNTY STAFF"
+            },
+            {
+              "label": "SAN BERNARDINO COUNTY STAFF",
+              "value": "SAN BERNARDINO COUNTY STAFF"
+            },
+            {
+              "label": "SAN DIEGO COUNTY STAFF",
+              "value": "SAN DIEGO COUNTY STAFF"
+            },
+            {
+              "label": "SAN FRANCISCO COUNTY STAFF",
+              "value": "SAN FRANCISCO COUNTY STAFF"
+            },
+            {
+              "label": "SAN JOAQUIN COUNTY STAFF",
+              "value": "SAN JOAQUIN COUNTY STAFF"
+            },
+            {
+              "label": "SAN LUIS OBISPO COUNTY STAFF",
+              "value": "SAN LUIS OBISPO COUNTY STAFF"
+            },
+            {
+              "label": "SAN MATEO COUNTY STAFF",
+              "value": "SAN MATEO COUNTY STAFF"
+            },
+            {
+              "label": "SANTA BARBARA COUNTY STAFF",
+              "value": "SANTA BARBARA COUNTY STAFF"
+            },
+            {
+              "label": "SANTA CLARA COUNTY STAFF",
+              "value": "SANTA CLARA COUNTY STAFF"
+            },
+            {
+              "label": "SOLANO COUNTY STAFF",
+              "value": "SOLANO COUNTY STAFF"
+            },
+            {
+              "label": "STANISLAUS COUNTY STAFF",
+              "value": "STANISLAUS COUNTY STAFF"
+            },
+            {
+              "label": "VENTURA COUNTY STAFF",
+              "value": "VENTURA COUNTY STAFF"
+            },
+            {
+              "label": "YOLO COUNTY STAFF",
+              "value": "YOLO COUNTY STAFF"
+            },
+            {
+              "label": "TULARE COUNTY STAFF",
+              "value": "TULARE COUNTY STAFF"
+            },
+            {
+              "label": "SANTA BARBARA JAILS",
+              "value": "SANTA BARBARA JAILS"
+            },
+            {
+              "label": "DIVISION OF JUVENILE JUSTICE",
+              "value": "DIVISION OF JUVENILE JUSTICE"
+            },
+            {
+              "label": "OTHER CCHCS",
+              "value": "OTHER CCHCS"
+            },
+            {
+              "label": "OTHER CDCR",
+              "value": "OTHER CDCR"
+            },
+            {
+              "label": "PAROLE",
+              "value": "PAROLE"
+            }
+           
 
     ]
 }

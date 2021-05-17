@@ -6,7 +6,7 @@ import "./CovidMap.css";
 //added 
 
 //added
-import {  GeoJSON } from "react-leaflet";
+import { MapContainer as Map, GeoJSON } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
 /*
 const myIcon = new L.Icon({
@@ -32,18 +32,21 @@ const CovidMap = ({ counties }) => {
     layer.options.fillColor = county.properties.color;
     const name = county.properties.name;
     const confirmedText = county.properties.confirmedText;
-    layer.bindPopup(`${name} ${confirmedText}`);
+    const confirmedTitle = "<br>Confirmed Cases: ";
+    const deathsTitle = "<br> Total Deaths: ";  //added
+    const deathsText = county.properties.deathsText;
+    layer.bindPopup(`${name} ${confirmedTitle} ${confirmedText} ${deathsTitle} ${deathsText}`);  //added
   };
 
  // const onEachPrison = 
   return (
-  
-
+    <Map style={{ height: "85vh" }} zoom={6} center={[38.1700, -119.7462]}>
       <GeoJSON
         style={mapStyle}
         data={counties}
         onEachFeature={onEachCounty}  
       /> 
+    </Map>
 
             
     
@@ -52,14 +55,3 @@ const CovidMap = ({ counties }) => {
 };
 
 export default CovidMap;
-/*
-<Marker 
-position={a} icon={myIcon}>
-<Popup>
-  A pretty CSS3 popup. <br /> Easily customizable.</Popup>
-</Marker>
-<Marker 
-position={b} icon={myIcon}>
-<Popup>
-  A pretty CSS3 popup. <br /> Easily customizable.</Popup>
-</Marker>*/

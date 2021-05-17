@@ -1,2 +1,9 @@
 venv
+project
+
+*.sqlite3
+*.sqlite*
+
+node_modules
+
 __pycache__

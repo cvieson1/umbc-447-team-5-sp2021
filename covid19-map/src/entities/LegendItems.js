@@ -2,40 +2,40 @@ import LegendItem from "./LengendItem";
 
 var legendItems = [
   new LegendItem(
-    "10 +",
+    "10000 +",
     "#741f1f",
     // "#8b0000",
-    (cases) => cases >= 10,
+    (cases) => cases >= 10000,
     "white"
   ),
 
   new LegendItem(
-    "5 - 9",
+    "5001 - 10000",
     // "#741f1f",
     "#9c2929",
-    (cases) => cases >= 5 && cases < 10,
+    (cases) => cases >= 5001 && cases < 10001,
     "White"
   ),
 
   new LegendItem(
-    "2 - 4",
+    "2501 - 5000",
     "#c57f7f",
-    (cases) => cases >= 2 && cases < 5
+    (cases) => cases >= 2501 && cases < 5001
   ),
 
   new LegendItem(
-    "1",
+    "1001 - 2500",
     "#d8aaaa",
-    (cases) => cases === 1 //>= 50_000 && cases < 200_000
+    (cases) => cases >= 1001 && cases < 2501 //>= 50_000 && cases < 200_000
   ),
 
   new LegendItem(
-    "0", //"0 - 49,999",
+    "0 - 1000", //"0 - 49,999",
     "#ebd4d4",
-    (cases) => cases === 0 //> 0 && cases < 50_000
+    (cases) => cases >= 0 && cases < 1001//> 0 && cases < 50_000
   ),
 
-  new LegendItem("No Data", "#ffffff", (cases) => true),
+  new LegendItem("Number of Cases", "#ffffff", (cases) => true),
 ];
 
 export default legendItems;

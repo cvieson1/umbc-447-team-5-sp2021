@@ -1,12 +1,13 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import "./App.css";
 import Covid19 from "./components/Covid19";
-import axios from 'axios'
+//import axios from 'axios'
 
 
 
 
 function App() {
+ /*
   const [getMessage, setGetMessage] = useState({})
 
   useEffect(()=>{
@@ -18,7 +19,7 @@ function App() {
     })
   
   }, [])
-
+*/
   return (
     <div className ="App">
       

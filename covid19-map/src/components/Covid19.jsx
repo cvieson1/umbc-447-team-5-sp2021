@@ -10,6 +10,8 @@ import DatePicker from "react-datepicker";
 
 import "react-datepicker/dist/react-datepicker.css";
 import SearchBar from "./Searchbar";
+import {MapContainer as Map} from "react-leaflet";
+import PrisonMap from "./PrisonMap"
 
 const Covid19 = () => {
   const [counties, setcounties] = useState([]);
@@ -67,10 +69,13 @@ const Covid19 = () => {
           <Loading />
         ) : (
           <div>
-
-            <CovidMap counties={counties} />
+            <Map style={{ height: "85vh" }} zoom={6} center={[38.1700, -119.7462]}>
+              <CovidMap counties={counties} />
+              <PrisonMap/> 
+              
+              
+            </Map>
             <Legend legendItems={legendItemsReverse} />
-            
           </div>
         )}
       </div>

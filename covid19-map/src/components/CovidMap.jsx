@@ -1,5 +1,5 @@
 import React from "react";
-import { MapContainer as Map, GeoJSON } from "react-leaflet";
+import { GeoJSON } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
 import "./CovidMap.css";
 const CovidMap = ({ counties }) => {
@@ -21,13 +21,13 @@ const CovidMap = ({ counties }) => {
   };
 
   return (
-    <Map style={{ height: "85vh" }} zoom={6} center={[38.1700, -119.7462]}>
+    
       <GeoJSON
         style={mapStyle}
         data={counties}
         onEachFeature={onEachCounty}
       />
-    </Map>
+    
   );
 };
 
